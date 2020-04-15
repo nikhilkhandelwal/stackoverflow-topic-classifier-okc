@@ -13,16 +13,17 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle
 import random
 from sklearn.ensemble import AdaBoostClassifier
+
 model_output_dir = "models/"
 logging.basicConfig(level=logging.INFO)
 
-def tfidf_features( train, test, type):
+
+def tfidf_features(train, test, type):
     global model_output_dir
-    #tfidf_vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=10, max_features=1000)
     tfidf_vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=10, max_features=1000)
     train = tfidf_vectorizer.fit_transform(train)
     test = tfidf_vectorizer.transform(test)
-    pickle.dump(tfidf_vectorizer, open(model_output_dir+type + "_tfidf_vectorizer.pickle", "wb"))
+    pickle.dump(tfidf_vectorizer, open(model_output_dir + type + "_tfidf_vectorizer.pickle", "wb"))
     return train, test
 
 
@@ -59,13 +60,9 @@ def transform_features(train, test):
 def create_model(x_train, y_train, x_test, y_test):
     logger = logging.getLogger("train.create_model")
     logger.info("Training the model")
-    #model = RandomForestClassifier(bootstrap=True, max_depth=70, random_state=0, n_estimators=400, min_samples_split=10,
-    #                               min_samples_leaf=4)
-    #model = RandomForestClassifier( random_state=0)
-    model = AdaBoostClassifier(random_state=1)
+    model = RandomForestClassifier(bootstrap=True, random_state=0)
     model.fit(x_train, y_train)
     logger.info("The accuracy of model on test set")
-    print(model.score(x_test, y_test))
     return model
 
 
@@ -105,7 +102,7 @@ def train(args):
     logger.info("creating a random forest classifier ")
     model = create_model(x_train, y_train, x_test, y_test)
     logger.info("evaluating the model ")
-    # evaluate_model(model, y_test, True)
+    evaluate_model(model, x_test, y_test, True)
     logger.info("saving model to disk a random forest classifier ")
     # save the model to disk
     filename = '/so_model.sav'

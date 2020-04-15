@@ -6,7 +6,7 @@ The project used stackoverflow data to build a machine learning model to classif
 
 1. Body of question
 2. Title of question
-3. Lable (0: On topic, 1: off topic)
+3. Label (0: On topic, 1: off topic)
 
 ### Features of the data:
 
