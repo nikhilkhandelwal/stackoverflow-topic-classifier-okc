@@ -1,0 +1,2175 @@
+,Body,Title,label
+0,"<p>When I add an xml and name it, first of all, it wont let me put it under the folder I create because, the name of the folder doesnt show up. But when I put the xml file under value or menu. I get a root error</p>
+",Getting an xml file error,1
+1,"<p>I like F# but sometimes I need something light and cross-platform and without .NET for sure.
+I tried to use OCamL many times but seems like I just can't start it.</p>
+
+<ol>
+<li>Installed IDEA, added OCamL plugin -> Doesn't work</li>
+<li>Installed eclipse ODT plugin -> Can't launch even config OCamL compiler - to complicated</li>
+<li>Even had tryed NetBeans plugin long time ago but even can't deal with it.</li>
+</ol>
+
+<p>So for now I'm using ocamlc -o ""main.exe"" ""main.ml"" from command shell and different light editors. I don't use Vim or Emacs, I'm using nano and I have a habit of usage full-featured IDEs.</p>
+
+<p>I found various documentation (this is looking like the best to start <a href=""http://caml.inria.fr/pub/docs/oreilly-book/html/index.html"">http://caml.inria.fr/pub/docs/oreilly-book/html/index.html</a> for me) but still being confusing when looking for something a bit specific alike sqlite access. found this : <a href=""http://neugierig.org/software/ocaml/sqlite/"">http://neugierig.org/software/ocaml/sqlite/</a> with strange api annotation and no examples. And all the documentations about IDE usage I found are outdated or doesn't work.</p>
+
+<p>Addition subquestion : some people told me ""don't use OCamL, it's dead language for students with low libraries support and seems like dieng, use python or ruby instead"". But I like the beautify of OCamL. I want to give it a try. Tell me if that is normal to use OCamL for production code today ?</p>
+
+<p>thank you.</p>
+",Looking for OCaml IDE,1
+2,"<p>On OSX, the system <code>sed</code> seems, at times, a bit limited regarding regular expressions and some escape characters — so much, that I end up using <code>perl -pe</code> a fair bit of the time, and now I’m wondering if I should care about using <code>sed</code> at all.</p>
+
+<p>I usually need this when piping a lo of commands in a row, usually calling <code>sed</code> and <code>perl</code> multiple times during its execution, and I’d like to know if I should use <code>sed</code> when it does the job, using <code>perl</code> only when it is necessary. I’m interested in this from a performance point of view (having multiple commands of this kind in a script can make a difference in the end), but if there are any other considerations you deem worthy of mentioning, they’re welcome, naturally.</p>
+","`perl -pe` vs `sed`, performance-wise",1
+3,"<p>I am using below code to get a value of a checked radio button. Based on the checked radio button value (Custom_01, Custom_02, Custom_03) I want to display a string/text in the an input field. Can you please let me know if the below syntax is correct. I tried it and I am not getting the output value in the text box.</p>
+
+<pre><code>&lt;script type=""text/javascript""&gt;
+
+var selectedDMlabel = $('input:radio[name=FIELD_38]:checked').val();
+
+If(selectedDMlabel == 'Custom_01')
+$(""input#FIELD_370"").val('Excellent');
+
+If(selectedDMlabel == 'Custom_02')
+$(""input#FIELD_370"").val('Very Good');
+
+If(selectedDMlabel == 'Custom_03')
+$(""input#FIELD_370"").val('Fair');
+
+&lt;/script&gt;
+</code></pre>
+",Jquery syntax correction,1
+4,"<p>A friend and I are developing an application on android but we live in 2 different cities. What are some good applications that helps manage the entire project (Like the all the files)? We tried using dropbox but ran into some problems. Is SVN a viable option?</p>
+",Managing Android App Development Between Computers,1
+5,"<pre><code>FrameLayout frameLayout = new FrameLayout(this);
+LinearLayout linearLayout1= new LinearLayout(this);
+LinearLayout linearLayout2= new LinearLayout(this);
+
+FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
+LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+
+params.gravity = Gravity.CENTER_VERTICAL;
+
+frameLayout.addView(linearLayout1, params);
+</code></pre>
+
+<p>how to add linearLayout2 under linearLayout1 </p>
+",How to add LinearLayout under another LinearLayout in a FrameLayout programmatically?,1
+6,"<p>We're using Fast Reports to create reports but we're not very happy with the quality of the PDFs it creates. I know we can plug in other PDF components instead of the one that comes with FastReports so my question is</p>
+
+<p>What good PDF components are there out there (Free or Commercial) for Delphi? Ideally it should not require any dlls.</p>
+
+<p><strong>Edit:</strong> I bought <a href=""http://www.gnostice.com/"" rel=""nofollow noreferrer"">Gnostice</a> in the end as it had the FastReports integration, source available and a fairly good reputation. I did however find an issue (after I had bought it) with exporting multipage reports from FastReports to PDF where the component leaks memory and corrupts the output. I've reported it to Gnostice so I guess we'll see how good their support is in the next few days...</p>
+
+<p><strong>Edit 2:</strong> Gnostice came back with a fix that rectifies the memory leak and the corrupted output.</p>
+",Delphi PDF generation,1
+7,"<p>I want to make a game in opengl. Unfortunately, I don't know how to make square in OpenGL in java :[
+I read JayWay Tutorials, but these tutorials are...
+strange....
+Why? These tutorials are complex and I don't understand as I make square xD
+Can you help me? Can you give me a simple project/tutorial I could learn this?</p>
+",Quick start with using opengl on Android,1
+8,"<p>I've changed the order of logging into a Rails project and I'd like it to direct to a different page after signing up or signing in. 
+I'm using devise. The sign in/sign up process works fine - I just want to change the page that users are directed to.
+At the moment, signing in directs to home/index.html.erb but I can't find where that is set. There's no path indicated on the submit button in devise/registrations/new.<br>
+Can anyone tell me in which file I can set the page where users are directed when they sign in or sign up?</p>
+",Rails: Get devise to direct to a different page on log in,0
+9,"<p>I am totally new to android. I have about 500 data in a sqlite DB. I am trying to access this on gridView for which, I am using custom arrayAdapter, but they are very slow in loading the data. I would like to get the data shown faster. Can anybody recommend me the best way to do so?</p>
+
+<p>Here is what I have done:</p>
+
+<p><strong>In DB:</strong></p>
+
+<pre><code>public ArrayList&lt;DataDetails&gt; getDetails() 
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String selectQuery = ""SELECT * FROM "" + TABLE_DATA_DETAILS_LOCAL;
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        ArrayList&lt;DataDetails&gt; datalist = new ArrayList&lt;DataDetails&gt;();
+        if (cursor.moveToFirst()) 
+        {
+            DataDetails  valueID = null;
+            do 
+            {
+                valueID = new DataDetails(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7));
+                datalist.add(valueID);
+            } 
+            while (cursor.moveToNext());
+            cursor.close();
+            db.close();
+        }
+        return datalist;
+    }
+</code></pre>
+
+<p><strong>For Fetching data from DB:</strong></p>
+
+<pre><code>for (int i = 0; i &lt; DetailsDataCount; i++)
+            {
+                String dataId = db.getDetails().get(i).getdataID();
+                String dataType = db.getDetails().get(i).getDataType();
+                String dataTypeImage = db.getDetails()get(i).getDataTypeImage();
+                String dataDate = db.getDetails().get(i).getDataDate();
+                String dataWeek = db.getDetails().get(i).getDataWeek();
+                String dataAcount = db.getDetails().get(i).getDataAcount();
+                String dataAccountImage = db.getDetails().get(i).getDataAccountImage();
+                String dataAccounttextData = db.getDetails().get(i).getAccountData();
+
+                listofDataDetails = new dataDetails(dataId, dataType, dataTypeImage, dataDate, dataWeek, dataAcount, dataAccountImage, dataAccounttextData);
+                dataList.add(listofDataDetails);
+            }
+
+            gridView.setVisibility(View.VISIBLE);
+            noDataText.setVisibility(View.GONE);
+
+            adapterfordata = new DataAdapter(getActivity(), R.layout.data_main_row, dataList);
+            gridView.setAdapter(adapterfordata);
+</code></pre>
+
+<p><strong>My Customer Adapter Looks like this:</strong></p>
+
+<pre><code>public class DataAdapter extends ArrayAdapter&lt;DataDetails&gt;
+{
+    ArrayList&lt;DataDetails&gt; dataList;
+    private ArrayList&lt;DataDetails&gt; originalList;
+    private AccountFilter filter;
+    private LayoutInflater vi;
+    private Context mContext;
+    private String datadate;
+
+    public DataAdapter(Context context, int textViewResourceId, ArrayList&lt;DataDetails&gt; nameList) 
+    {
+        super(context, textViewResourceId, nameList);
+        this.dataList = new ArrayList&lt;DataDetails&gt;();
+        this.dataList.addAll(nameList);
+
+        this.originalList = new ArrayList&lt;DataDetails&gt;();
+        this.originalList.addAll(nameList);
+
+        mContext = context;
+
+        vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
+
+    private class ViewHolder
+    {
+        public TextView dataDate;
+        public ImageView dataTypeimage;
+        public TextView dataType;
+        public TextView dataAccount;
+
+    }
+
+
+    @Override
+    public View getView(int position, View convertView, final ViewGroup parent) 
+    {
+        ViewHolder holder = null;
+
+        if (convertView == null)
+        {
+            convertView = vi.inflate(R.layout.data_main_row, null);
+
+            holder = new ViewHolder();
+
+            holder.datatypeimage = (ImageView) convertView.findViewById(R.id.data_type_Image);
+            holder.dataType = (TextView) convertView.findViewById(R.id.data_Type);
+            holder.dataDate = (TextView) convertView.findViewById(R.id.data_Account);
+            convertView.setTag(holder);
+        }
+        else
+        {
+            holder = (ViewHolder) convertView.getTag();
+        }
+
+        DataDetails bd = dataList.get(position);
+
+        String tempImage = bd.getdataTypeImage();
+
+        int resID = mContext.getResources().getIdentifier(tempImage, ""drawable"", mContext.getPackageName());
+        holder.dataTypeimage.setImageResource(resID);
+
+        holder.dataType.setText(bd.getDataType());      
+
+        return convertView;
+    }
+  }
+</code></pre>
+
+<p>It will be great if anybody can guide me on this?</p>
+
+<p>Thanks!</p>
+",SQLite to GridView using ArrayAdapter,0
+10,"<p>I have a React Native project I've written using Expo -- when I develop and publish on Expo, the Status Bar up top (the time, wifi etc) is fine, I've never had to be concerned about it -- it's always been there, so I've never had to read-in a separate StatusBar component or anything like that.</p>
+
+<p><a href=""https://i.stack.imgur.com/zdPCR.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/zdPCR.png"" alt=""enter image description here""></a></p>
+
+<p>But when I 'build' the app to get the IPA file and then deploy on TestFairy, the App's statusbar is completely invisible (not sure if the font is white or it's an overlay or what).</p>
+
+<p><a href=""https://i.stack.imgur.com/Z6Nck.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/Z6Nck.png"" alt=""enter image description here""></a></p>
+
+<p>Any ideas? Thanks!</p>
+",React Native iOS StatusBar invisible after build?,0
+11,"<p>My project launches a target process, injecting a library into it which is meant to hook Direct3D functions. I have done this successfully in the past, but decided to rewrite the library to a closer specification of the Direct3D interfaces. The idea here was to create a set of my own 1:1 wrapper classes, each inheriting a DirectX interface (ie, <code>class CD3D8 : IDirect3D8</code>, <code>class CD3DDevice8 : IDirect3DDevice8</code> and so forth). Since all members of each underlying DirectX COM interface are pure virtual methods, I thought I could easily override them...</p>
+
+<p>So when my library hooks <code>Direct3DCreate8</code>, I return a pointer to my <code>CDirect3D8</code> instead of the standard <code>IDirect3D8</code>. And then my library uses the virtual table of that pointer to hook method #15, which is <code>IDirect3D8::CreateDevice</code>. And once that is called, I return a pointer to <code>CDirect3DDevice8</code> as opposed to <code>IDirect3DDevice8</code>. All appears to be well, except none of the overrided functions are being called by the injected application! Somehow, the app appears to be calling the original interface functions instead of my own. Am I missing some sort of concept here? Do I need to manually remap the virtual table pointers to the ones in my custom wrapper classes, for example?</p>
+
+<p>Here's what I got so far (only showing d3d8):<br/>
+<br/>
+D3D.h</p>
+
+<pre><code>#pragma once
+
+
+#define STDM(method)        COM_DECLSPEC_NOTHROW HRESULT STDMETHODCALLTYPE method
+#define STDM_(type,method)  COM_DECLSPEC_NOTHROW type STDMETHODCALLTYPE method
+
+template&lt;class IDirect3D8&gt;
+class CD3D : public IDirect3D8
+{
+public:
+    CD3D();
+    ~CD3D();
+
+    /*** IUnknown methods ***/
+    STDM(QueryInterface)(THIS_ REFIID riid, void** ppvObj);
+    STDM_(ULONG,AddRef)(THIS);
+    STDM_(ULONG,Release)(THIS);
+
+    /*** IDirect3D8 methods ***/
+    STDM(RegisterSoftwareDevice)(THIS_ void* pInitializeFunction);
+    STDM_(UINT, GetAdapterCount)(THIS);
+    STDM(GetAdapterIdentifier)(THIS_ UINT Adapter,DWORD Flags,D3DADAPTER_IDENTIFIER8* pIdentifier);
+    STDM_(UINT, GetAdapterModeCount)(THIS_ UINT Adapter);
+    STDM(EnumAdapterModes)(THIS_ UINT Adapter,UINT Mode,D3DDISPLAYMODE* pMode);
+    STDM(GetAdapterDisplayMode)(THIS_ UINT Adapter,D3DDISPLAYMODE* pMode);
+    STDM(CheckDeviceType)(THIS_ UINT Adapter,D3DDEVTYPE CheckType,D3DFORMAT DisplayFormat,D3DFORMAT BackBufferFormat,BOOL Windowed);
+    STDM(CheckDeviceFormat)(THIS_ UINT Adapter,D3DDEVTYPE DeviceType,D3DFORMAT AdapterFormat,DWORD Usage,D3DRESOURCETYPE RType,D3DFORMAT CheckFormat);
+    STDM(CheckDeviceMultiSampleType)(THIS_ UINT Adapter,D3DDEVTYPE DeviceType,D3DFORMAT SurfaceFormat,BOOL Windowed,D3DMULTISAMPLE_TYPE MultiSampleType);
+    STDM(CheckDepthStencilMatch)(THIS_ UINT Adapter,D3DDEVTYPE DeviceType,D3DFORMAT AdapterFormat,D3DFORMAT RenderTargetFormat,D3DFORMAT DepthStencilFormat);
+    STDM(GetDeviceCaps)(THIS_ UINT Adapter,D3DDEVTYPE DeviceType,D3DCAPS8* pCaps);
+    STDM_(HMONITOR, GetAdapterMonitor)(THIS_ UINT Adapter);
+    STDM(CreateDevice)(THIS_ UINT Adapter,D3DDEVTYPE DeviceType,HWND hFocusWindow,DWORD BehaviorFlags,D3DPRESENT_PARAMETERS* pPresentationParameters,IDirect3DDevice8** ppReturnedDeviceInterface);
+};
+</code></pre>
+
+<p><br/>
+D3D.cpp</p>
+
+<pre><code>#include ""stdafx.h""
+
+
+#define STDIMP(iface, method, ...) COM_DECLSPEC_NOTHROW HRESULT STDMETHODCALLTYPE CD3D&lt;iface&gt;::method(__VA_ARGS__)
+#define STDIMP_(iface, type, method, ...) COM_DECLSPEC_NOTHROW type STDMETHODCALLTYPE CD3D&lt;iface&gt;::method(__VA_ARGS__)
+#define STDIMP8(method, ...) STDIMP(IDirect3D8, method, __VA_ARGS__)
+#define STDIMP8_(type, method, ...)  STDIMP_(IDirect3D8, type, method, __VA_ARGS__)
+
+
+CD3D&lt;IDirect3D8&gt;::CD3D()
+{
+}
+
+CD3D&lt;IDirect3D8&gt;::~CD3D()
+{
+}
+
+STDIMP8(QueryInterface, THIS_ REFIID riid, void** ppvObj) {
+    return QueryInterface( riid, ppvObj );
+}
+
+STDIMP8_(ULONG, AddRef, THIS) {
+    return AddRef();
+}
+
+STDIMP8_(ULONG, Release, THIS) {
+    return Release();
+}
+
+STDIMP8(RegisterSoftwareDevice, THIS_ void* pInitializeFunction) {
+    return RegisterSoftwareDevice( pInitializeFunction );
+}
+
+STDIMP8_(UINT, GetAdapterCount, THIS) {
+    return GetAdapterCount();
+}
+
+STDIMP8(GetAdapterIdentifier, THIS_ UINT Adapter, DWORD Flags, D3DADAPTER_IDENTIFIER8* pIdentifier) {
+    return GetAdapterIdentifier( Adapter, Flags, pIdentifier );
+}
+
+STDIMP8_(UINT, GetAdapterModeCount, THIS_ UINT Adapter) {
+    return GetAdapterModeCount( Adapter );
+}
+
+STDIMP8(EnumAdapterModes, THIS_ UINT Adapter, UINT Mode, D3DDISPLAYMODE* pMode) {
+    return EnumAdapterModes( Adapter, Mode, pMode );
+}
+
+STDIMP8(GetAdapterDisplayMode, THIS_ UINT Adapter, D3DDISPLAYMODE* pMode) {
+    return GetAdapterDisplayMode( Adapter, pMode );
+}
+
+STDIMP8(CheckDeviceType, THIS_ UINT Adapter, D3DDEVTYPE CheckType, D3DFORMAT DisplayFormat, D3DFORMAT BackBufferFormat, BOOL Windowed) {
+    return CheckDeviceType( Adapter, CheckType, DisplayFormat, BackBufferFormat, Windowed );
+}
+
+STDIMP8(CheckDeviceFormat, THIS_ UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT AdapterFormat, DWORD Usage, D3DRESOURCETYPE RType, D3DFORMAT CheckFormat) {
+    return CheckDeviceFormat( Adapter, DeviceType, AdapterFormat, Usage, RType, CheckFormat );
+}
+
+STDIMP8(CheckDeviceMultiSampleType, THIS_ UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT SurfaceFormat, BOOL Windowed, D3DMULTISAMPLE_TYPE MultiSampleType) {
+    return CheckDeviceMultiSampleType( Adapter, DeviceType, SurfaceFormat, Windowed, MultiSampleType );
+}
+
+STDIMP8(CheckDepthStencilMatch, THIS_ UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT AdapterFormat, D3DFORMAT RenderTargetFormat, D3DFORMAT DepthStencilFormat) {
+    return CheckDepthStencilMatch( Adapter, DeviceType, AdapterFormat, RenderTargetFormat, DepthStencilFormat );
+}
+
+STDIMP8(GetDeviceCaps, THIS_ UINT Adapter, D3DDEVTYPE DeviceType, D3DCAPS8* pCaps) {
+    return GetDeviceCaps( Adapter, DeviceType, pCaps );
+}
+
+STDIMP8_(HMONITOR, GetAdapterMonitor, THIS_ UINT Adapter) {
+    return GetAdapterMonitor( Adapter );
+}
+
+STDIMP8(CreateDevice, THIS_ UINT Adapter, D3DDEVTYPE DeviceType, HWND hFocusWindow, DWORD BehaviorFlags, D3DPRESENT_PARAMETERS* pPresentationParameters, IDirect3DDevice8** ppReturnedDeviceInterface) {
+    return CreateDevice( Adapter, DeviceType, hFocusWindow, BehaviorFlags, pPresentationParameters, ppReturnedDeviceInterface );
+}
+</code></pre>
+
+<p><br/>
+Main.cpp (Using <a href=""http://research.microsoft.com/en-us/downloads/d36340fb-4d3c-4ddd-bf5b-1db25d03713d/default.aspx"" rel=""nofollow"">Microsoft Detours 3.0</a>):</p>
+
+<pre><code>#include &lt;detours.h&gt;
+#include ""D3D.h""
+
+typedef HMODULE (WINAPI * HookLoadLibraryA)( LPCSTR lpFileName );
+typedef IDirect3D8 *(WINAPI * HookDirect3DCreate8)( UINT SdkVersion );
+typedef HRESULT (WINAPI * HookCreateDevice8)( IDirect3DDevice8* pInterface, UINT Adapter, D3DDEVTYPE DeviceType, HWND hFocusWindow, DWORD BehaviorFlags, D3DPRESENT_PARAMETERS* pPresentationParameters, IDirect3DDevice8** ppReturnedDeviceInterface );
+HookLoadLibraryA RealLoadLibraryA;
+HookDirect3DCreate8 RealDirect3DCreate8;
+HookCreateDevice8 RealCreateDevice8;
+//...
+CD3D&lt;IDirect3D8&gt; *m_d3d8;
+CD3DDevice&lt;IDirect3D8&gt; *m_d3dDev8;
+//...
+RealLoadLibraryA = (HookLoadLibraryA)GetProcAddress(GetModuleHandleA(""kernel32.dll""), ""LoadLibraryA"");
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach(&amp;(PVOID&amp;)RealLoadLibraryA, FakeLoadLibraryA);
+DetourTransactionCommit();
+//...
+
+VOID VirtualHook( PVOID pInterface, PVOID pHookProc, PVOID pOldProc, int iIndex )
+{
+    // Hook a procedure within an interface's virtual table
+    PDWORD pVtable = (PDWORD)*((PDWORD)pInterface);
+    DWORD lpflOldProtect;
+
+    VirtualProtect( (PVOID)&amp;pVtable[iIndex], sizeof(DWORD), PAGE_READWRITE, &amp;lpflOldProtect );
+    if( pOldProc ) *(DWORD*)pOldProc = pVtable[iIndex];
+    pVtable[iIndex] = (DWORD)pHookProc;
+    VirtualProtect( pVtable, sizeof(DWORD), lpflOldProtect, &amp;lpflOldProtect );
+}
+
+HRESULT WINAPI FakeCreateDevice8( IDirect3DDevice8* pInterface, UINT Adapter, D3DDEVTYPE DeviceType, HWND hFocusWindow, DWORD BehaviorFlags, D3DPRESENT_PARAMETERS* pPresentationParameters, IDirect3DDevice8** ppReturnedDeviceInterface )
+{
+    HRESULT ret = RealCreateDevice8( pInterface, Adapter, DeviceType, hFocusWindow, BehaviorFlags, pPresentationParameters, ppReturnedDeviceInterface );
+    // Save the registers
+    __asm pushad
+    if(*ppReturnedDeviceInterface != NULL)
+        m_d3dDev8 = reinterpret_cast&lt;CD3DDevice&lt;IDirect3D8&gt; *&gt;(*ppReturnedDeviceInterface);
+    // Restore the registers
+    __asm popad
+    return ret;
+}
+
+IDirect3D8 *WINAPI FakeDirect3DCreate8( UINT SdkVersion )
+{
+    m_d3d8 = reinterpret_cast&lt;CD3D&lt;IDirect3D8&gt; *&gt;(RealDirect3DCreate8( SdkVersion ));
+    if( m_d3d8 ) {
+        // Hook CreateDevice (vftable index #15)
+        VirtualHook( m_d3d8, &amp;FakeCreateDevice8, &amp;RealCreateDevice8, 15 );
+    }
+    return m_d3d8;
+}
+
+HMODULE WINAPI FakeLoadLibraryA( LPCSTR lpFileName )
+{
+    CStringA strFileName( lpFileName );
+    int i = strFileName.ReverseFind('\\');
+    if(i != -1) strFileName = strFileName.Right(i + 1);
+    if( strFileName.CompareNoCase(""d3d8.dll"") == 0 )
+    {
+        // Hook Direct3DCreate8
+        HMODULE m_hD3D = RealLoadLibraryA( lpFileName );
+        RealDirect3DCreate8 = (HookDirect3DCreate8)GetProcAddress(m_hD3D, ""Direct3DCreate8"");
+        DetourTransactionBegin();
+        DetourUpdateThread( GetCurrentThread() );
+        DetourAttach(&amp;(PVOID&amp;)RealDirect3DCreate8, FakeDirect3DCreate8);
+        DetourTransactionCommit();
+        return m_hD3D;
+    }
+}
+</code></pre>
+
+<p><br/><br/>
+... The hooked functions get called, but none of my wrapper functions do, and the injected application runs just as it normally would. Why is this? Of course, I could manually set hooks for each and every function found in each and every DirectX interface (for each version of Direct3D), but the point of this was to try and prevent having to do that and to keep it a bit cleaner. So is there a way to get this to work as I had intended? Thanks!</p>
+",Overriding Direct3D interfaces?,0
+12,"<p>I am trying to add <code>(not(X))</code> to all my items <code>X</code> in a sequence.</p>
+
+<p>For example:</p>
+
+<p>Convert <code>(a b)</code> to
+<code>( (not(a)) (not(b)) )</code></p>
+
+<p>When I use <code>(map (fn [x] (not(x))) mylist)</code>, it tries to evaluate the nots and return booleans.</p>
+
+<p>When I use <code>(map (fn [x] '(not(x))) mylist)</code>, it just returns a list of <code>(not(x))</code> without actually putting in my list's variables.</p>
+
+<p><code>(a b) --&gt; ( (not(a)) (not(b)) )</code> ? Thanks!</p>
+","Adding ""not"" to each item in a sequence in Clojure",0
+13,"<p>I would like to use Scrapy's built-in URI parameters to name my log file (as I can name the feed export), but this does not work. Could someone explain the difference?</p>
+
+<p>This can be reproduced by starting a new project, creating a generic spider, updating the settings file with the below parameters, and running the spider.</p>
+
+<pre><code>scrapy startproject project_name
+cd project_name
+scrapy genspider project_spider
+# add above settings to settings.py
+scrapy crawl project_spider
+#outputs items file with correct name but log file has incorrect name
+</code></pre>
+
+<p>My settings file contains the following:</p>
+
+<pre><code>FEED_URI = '%(name)s--%(time)s.csv'
+LOG_FILE = '%(name)s--%(time)s.log'
+</code></pre>
+",Scrapy - using URI parameters for logging file,0
+14,"<p>I'm attempting to slowly migrate an Objective C app over to Swift and have started to create new classes -</p>
+
+<pre><code>public class MapsAPI : NSObject {
+
+    let delegate: MapsAPIResponseDelegate
+
+    public init(managerWithDelegate delegate: MapsAPIResponseDelegate) {
+        self.delegate = delegate
+    }
+
+}
+</code></pre>
+
+<p>Now in my Objective C <code>.m</code> file I've declared <code>#import MyTarget-Swift.h</code> and in my <code>.h</code> I've added <code>@class MapsAPI</code> which all seems fine however I'm not sure what the Objective C initialisation code should look like. I've tried -</p>
+
+<pre><code>MapsAPI *api = [[MapsAPI alloc] initWithManagerWithDelegate: self];
+</code></pre>
+
+<p>But that errors with -</p>
+
+<blockquote>
+  <p>No visible @interface for 'MapsAPI' declares the selector
+  'initWithManagerWithDelegate:'</p>
+</blockquote>
+
+<p>I've tried looking at the definition of my <code>MyTarget-Swift.h</code> but all that shows is - </p>
+
+<pre><code>SWIFT_CLASS(""_TtC4What7MapsAPI"")
+@interface MapsAPI : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+</code></pre>
+
+<p>Is there something I'm doing wrong here?</p>
+",Bridging Swift Initialisers to Objective C,0
+15,"<p>I have researched every where but no any solution. I have a snippet code that run and get the total file size normally while in debug mode of eclipse. But when i run the project the value of sizeOfDownloadingFile only return -1. Please help me, I compile with Android 22, thanks in advance.</p>
+
+<pre><code> long id = downloadManager.enqueue(request);
+            Cursor cursor = downloadManager.query(new DownloadManager.Query()
+                    .setFilterById(id));
+            if (!cursor.moveToFirst()) {
+                Log.v(""DownloadManagerService"", ""download list is empty"");
+                return;
+            }
+            int sizeOfDownloadingFile = 0;
+            sizeOfDownloadingFile = cursor.getInt(cursor
+                    .getColumnIndex(DownloadManager.COLUMN_TOTAL_SIZE_BYTES));
+            Log.d(""DownloadManagerService"",
+                    ""File size of film "" + mFilm.getmTitle() + "" is ""
+                            + sizeOfDownloadingFile);
+</code></pre>
+",Android with DownloadManager get total file size,0
+16,"<p>Where can I get SVG blank maps of countries along with their states?</p>
+
+<p>I saw United States here, but I couldn't find other countries (Asia especially)
+<a href=""http://commons.wikimedia.org/wiki/File:USA_Counties_with_FIPS_and_names.svg"">http://commons.wikimedia.org/wiki/File:USA_Counties_with_FIPS_and_names.svg</a></p>
+",Where can I get blank SVG maps of countries and states?,1
+17,"<p>So, I'd like to change the layout of the keyboard inside my app, such that it will include a next button(which would switch between text fields, similar to the tab key on a normal keyboard) and done button (to dismiss the keyboard altogether).Another thing I'd like to change would be to make the keyboard bring up the numpad instead of the usual layout when you choose certain text fields (which are meant to accept numbers only). However, I don't have a clue how to do such a thing. Any assistance would be greatly appreciated.</p>
+",Manipulating the keyboard,0
+18,"<p>I am using Age Verify plugin for wordpress which gives you two options one is text, where user types in their Date of Month, Date and Year and other is a drop down list for Month, Date and Year. Text has a place holder for input fields as MM DD and YY, but drop down does not and its starts at January, 01 and Current year. I would like to implement the place holders for drop down as well, but not sure how. Please help. </p>
+
+<p>Here's the php responsible for displaying the drop down date of birth:</p>
+
+<pre><code>$form.='&lt;p&gt;&lt;select name=""av_verify_m"" id=""av_verify_m""&gt;';
+
+foreach ( range( 1, 12 ) as $month ) :
+
+    $month_name = date( 'F', mktime( 0, 0, 0, $month, 1 ) );
+
+    $form .= '&lt;option value=""' . $month . '""&gt;' . $month_name . '&lt;/option&gt;';
+
+endforeach;
+
+$form .= '&lt;/select&gt; - &lt;select name=""av_verify_d"" id=""av_verify_d""&gt;';
+
+foreach ( range( 1, 31 ) as $day ) :
+
+    $form .= '&lt;option value=""' . $day . '""&gt;' . esc_html( zeroise( $day, 2 ) ) .    '&lt;/option&gt;';
+
+endforeach;
+
+$form .= '&lt;/select&gt; - &lt;select name=""av_verify_y"" id=""av_verify_y""&gt;';
+
+foreach ( range( 1910, date( 'Y' ) ) as $year ) :
+
+    $selected = ( $year == date( 'Y' ) ) ? 'selected=""selected""' : '';
+
+    $form .= '&lt;option value=""' . $year . '"" ' . $selected . '&gt;' . $year . '&lt;/option&gt;';
+
+endforeach;
+
+$form .= '&lt;/select&gt;&lt;/p&gt;';
+</code></pre>
+",Age Verify Plugin for WP,1
+19,"<p>My app uses phone contact information to identify the sender of a message.</p>
+
+<p>I have the following questions:</p>
+
+<p>1)Is it allowed for an app to ask user during first use ""This App would like to access your contacts""? </p>
+
+<p>2) I am not sure how WhatsApp messaging works but it is allowed to find out that which contact is using whats app. Any idea how this works?</p>
+
+<p>Thanks for your help.</p>
+",Accessing contact info from iphone contact app,1
+20,"<p>I'm having a hard time finding a software that would emulates a Bluetooth keyboard (and/or mouse) that follows HID standard. 
+I've already found one, but I couldn't get it working: <a href=""http://mulliner.org/bluetooth/xkbdbthid.php"">http://mulliner.org/bluetooth/xkbdbthid.php</a></p>
+
+<p>I'm only interested in a solution that uses HID standard so that other machines can immediately recognize the soft as Bluetooth hid device, without the need of any pre-installed softwares. (Running under Windows or Linux if possible.)</p>
+
+<p>Would it be possible to write a code in java to emulate Bluetooth hid devices?</p>
+
+<p>Any help would be very appreciated, thanks!</p>
+",Bluetooth mouse/keyboard emulation,1
+21,"<p>I have started upgrading one of our internal software applications, written in ASP.NET Web Forms, and moving to ASP.NET MVC.  </p>
+
+<p>I am trying to leverage the Repository design pattern for my classes, which leads me to my question about how much to put into a repository.</p>
+
+<p>I have the following entities:</p>
+
+<ul>
+<li>Topic</li>
+<li>Topic Comments (Topic can have multiple comments)</li>
+<li>Topic Revisions (Any time a Topic is edited, a revision is recorded)</li>
+<li>Topic Subscriptions (Allows users to
+subscribe to changes for a particular
+Topic)</li>
+</ul>
+
+<p>I currently have an interface for ITopicRepository and a class called TopicRepository that handles all the basic CRUD for a Topic. I am now preparing to add code for the Comments, Revisions and Subscriptions. </p>
+
+<p>I am wondering does ALL this go into the TopicRepository OR do I create a repository for each of the entities, for example, TopicRevisionRepository and so on.</p>
+",Organizing classes using the repository design pattern,0
+22,"<p>I have a <code>UIViewController</code> with a <code>UITableView</code> as well as a <code>UIView</code> that is above the <code>UITableView</code> but aligned to the bottom of the screen. Problem is when the user is on a phone call, the <code>frame</code> settings don't work, and the <code>UIView</code> is pushed below the screen (so it is slightly covered. I'm trying to just align the <code>UIView</code> to the view bottom and simply not getting it to align. I have the constraints defined as below:</p>
+
+<pre><code>[self.view addSubview:self.signupView];
+[self.view addSubview:self.tableView];
+[self.view bringSubviewToFront:self.signupView];
+
+NSArray *v = [NSLayoutConstraint constraintsWithVisualFormat:@""V:|[_signupView(70)]-0-|""
+                                                     options:NSLayoutFormatAlignAllBaseline
+                                                     metrics:nil
+                                                       views:NSDictionaryOfVariableBindings(_signupView)];
+NSArray *h = [NSLayoutConstraint constraintsWithVisualFormat:@""H:|[_signupView]|""
+                                                     options:NSLayoutFormatAlignAllBottom
+                                                     metrics:nil
+                                                       views:NSDictionaryOfVariableBindings(_signupView)];
+[self.view addConstraints:h];
+[self.view addConstraints:v];
+</code></pre>
+
+<p>The height of <code>signupView</code> is 70, and it should just be aligned at the bottom of the screen with the width of the entire screen. The above code is putting the view at the top of the view. Is there something i'm missing here? Why is it not aligning with the bottom as I put above? I tried to read the below on this:</p>
+
+<p><a href=""http://commandshift.co.uk/blog/2013/01/31/visual-format-language-for-autolayout/"" rel=""nofollow noreferrer"">http://commandshift.co.uk/blog/2013/01/31/visual-format-language-for-autolayout/</a></p>
+
+<p><a href=""http://makeapppie.com/2014/07/26/the-swift-swift-tutorial-how-to-use-uiviews-with-auto-layout-programmatically/"" rel=""nofollow noreferrer"">http://makeapppie.com/2014/07/26/the-swift-swift-tutorial-how-to-use-uiviews-with-auto-layout-programmatically/</a></p>
+
+<p><a href=""https://stackoverflow.com/questions/16157665/use-autolayout-to-set-dynamic-uiview-to-match-container-view"">Use autolayout to set dynamic UIView to match container view</a></p>
+",NSLayoutConstraint for view on UITableView,0
+23,"<p>On my client workstation, my installation of VS2012 came with a stack overflow integrated search bar that sits alongside the quick launch.  It looks like this:</p>
+
+<p><img src=""https://i665.photobucket.com/albums/vv20/Tombstone67/stackoverflow_zpsae1570c7.png"" alt=""stack overflow""></p>
+
+<p>The problem with this is that it is very cool, I want it added to my personal machine, but no one knows how it got onto my machine or where to find it.  I know this question hasn't been asked on stack overflow before because visual studio told me so, included in the image below</p>
+
+<p><img src=""https://i665.photobucket.com/albums/vv20/Tombstone67/stackoverflow-search2_zpse82e253f.png"" alt=""stack overflow""></p>
+
+<p>The only extensions that I currently have installed to visual studio are included in the screenshot below and are consistent with all of my colleagues' installs. That's why it's a bit puzzling for me to have this while they don't.</p>
+
+<p><img src=""https://i665.photobucket.com/albums/vv20/Tombstone67/vs-current-extensions_zpsbfcc110e.png"" alt=""stack overflow""></p>
+
+<p>Does anyone else have this? 
+Where did you get it?</p>
+",Does anyone know where to get the [Stack Overflow Search] Visual Studio extension?,1
+24,"<p>Is there are Luke like tool for viewing lucene indexes in C# using the Lucene.NET api?</p>
+",Luke like tool in C#,1
+25,"<p>Using XPath, how do I determine if a node is within a form tag?  I guess I am trying to locate the form tag of its ancestor/preceding (but I couldn't get it to work).</p>
+
+<p>example 1:</p>
+
+<pre><code>&lt;form id=""doNotKnowIDofForm""&gt;
+&lt;div id=""level1""&gt;
+    &lt;span id=""mySpan""&gt;someText&lt;/span&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>example 2:</p>
+
+<pre><code>&lt;form id=""doNotKnowIDofForm""&gt;
+   This is a closed form.
+&lt;/form&gt;
+&lt;div id=""level1""&gt;
+    &lt;span id=""mySpan""&gt;someText&lt;/span&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>I can use xpath <code>""//span[id='mySpan']""</code> to locate the span node. But I would like to know if mySpan is inside a form (I do not know the id of the form). I have tried <code>""//span[id='mySpan']/preceding::form/""</code> and <code>""//span[id='mySpan']/ancestor::form/""</code></p>
+
+<p>Thanks in advance.</p>
+
+<p><strong>EDIT</strong>: I would like the XPath to select the myForm form tag in Example1 but <strong><em>NOT</em></strong> in Example2</p>
+",How to check of a Node is inside a form tag?,0
+26,"<p>I had already looked through this post:
+<a href=""https://stackoverflow.com/questions/16406772/python-building-new-list-from-existing-by-dropping-every-n-th-element"">Python: building new list from existing by dropping every n-th element</a>, but for some reason it does not work for me:</p>
+
+<p>I tried this way:</p>
+
+<pre><code>def drop(mylist, n):
+    del mylist[0::n]
+    print(mylist)
+</code></pre>
+
+<p>This function takes a list and <code>n</code>. Then it removes every n-th element by using n-step from list and prints result.</p>
+
+<p>Here is my function call:</p>
+
+<pre><code>drop([1,2,3,4],2)
+</code></pre>
+
+<p>Wrong output: <br>
+<code>[2, 4]</code> instead of <code>[1, 3]</code></p>
+
+<hr>
+
+<p>Then I tried a variant from the link above:</p>
+
+<pre><code>def drop(mylist, n):
+    new_list = [item for index, item in enumerate(mylist) if index % n != 0]
+    print(new_list)
+</code></pre>
+
+<p>Again, function call:</p>
+
+<pre><code>drop([1,2,3,4],2)
+</code></pre>
+
+<p>Gives me the same wrong result:
+<code>[2, 4]</code> instead of <code>[1, 3]</code></p>
+
+<hr>
+
+<p>How to correctly remove/delete/drop every <strong>n-th</strong> item from a list?</p>
+",Python: how to remove/delete every n-th element from list?,0
+27,"<p>Does anyone know of a good tutorial that explains how to build a faceted search structure with ajax , php , and mysql?</p>
+",Looking for a faceted navigation tutorial,1
+28,"<p>How do you set the text of a text input and then test it's value with React / Enzyme?</p>
+
+<pre><code>const input = wrapper.find('#my-input');
+
+input.simulate('change',
+  { target: { value: 'abc' } }
+);
+
+const val = input.node.value;
+
+//val is ''
+</code></pre>
+
+<p>All the <a href=""https://github.com/airbnb/enzyme/issues/76"" rel=""noreferrer"">solutions here</a> appear not to work..</p>
+",Test setting text value with React and Enzyme,0
+29,"<p>I need help to fix syntax errors with this string: </p>
+
+<pre><code>&lt;?php echo do_shortcode('[computer_tablet]&lt;a href=""URL"" class=""btn btn-blue"" style=""margin-left: 6px;"" onclick=""javascript:void window.open('URL','1372423739702','width=300,height=320,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;""&gt;Words&lt;/a&gt;[/computer_tablet]'); ?&gt;
+</code></pre>
+
+<p>Thank you</p>
+",Quotes issue with php and javascript,1
+30,"<p>I just need a suggestion. I have a program that takes valid html, and saves it to a file, I need a way to parse this html file to retrieve every image documented within that html file. (e.g. /foo/bar.jpg). Is there a html parsing library that I could use to achieve this? </p>
+",HTML Parser Library For C,1
+31,"<p>I'm reading some tutorials now about jQuery.. function creating,plugin creation etc. but these tutorials are missing some basic explanations like they mention things like </p>
+
+<p>function prototype, anonymous functions, umm putting (jQuery) after the }); .. and stuff like that .. is there a tutorial/website/book that explain these I'm not sure how to call them ""terms"" from beginner level to advance. I'm mean I have a knowledge of some jquery syntax but not enough to understand this, can anyone recommend useful resource?</p>
+
+<p>Google doesn't help much, I googled ""advance features of jquery"" don't really get me the things I wanna know.</p>
+
+<p><strong>EDIT</strong></p>
+
+<p>Also if someone can share his/her <strike>story</strike> steps on how to become comfortable with javascript, how to overcome this ""terminology"" or whatever is called</p>
+",Where can I find advanced jQuery/JavaScript resources/tutorials?,1
+32,"<p>I am struggling with realms in Tomcat 7. And after hours of digging, <em>stackoverflow</em> is the my last chance to find a sollution or an answer ,)</p>
+
+<p>Let's say I have two applications with their own definitions of <code>org.apache.catalina.realm.DataSourceRealm</code> with different parameters (<code>digest</code>, <code>userTable</code> and so on) defined within <code>app/META-INF/context.xml</code> file. Both applications are deployed within the same <code>Host</code>.</p>
+
+<p>My ""problem"" is that both applications share the one realm (the one which is being instantiated as the first one). I was not able to find anything about instantiation of realms in Tomcat's documentation.
+Is it even possible to tell Tomcat to create singleton instance of the realm defined within <code>Context</code> element? Or just Tomcat striclty creates singleton instances (one per realm's <code>className</code>) for entire <code>Host</code>/<code>Engine</code> no matter where they are defined?</p>
+
+<p>Thank you.</p>
+
+<p>//EDIT: SSO valve was enabled. This caused the issue.</p>
+",Tomcat 7 - Creating multiple instances of specific Realm per Host,0
+33,"<p>I need a Regex to get <code>//</code>, but if it starts with <code>http://</code> for it to do nothing.</p>
+
+<p>Example:</p>
+
+<pre><code>&lt;?php 
+function lol(){
+// blabalbal
+} // catch'm all
+
+echo 'http://link.com.br'; // this is a link.
+</code></pre>
+
+<p>Need to catch:</p>
+
+<blockquote>
+  <p>// blabalbal line </p>
+  
+  <p>// catch'm all line (starting on ""// catch"") </p>
+  
+  <p>// this is a link (starting on ""// this"").</p>
+</blockquote>
+
+<p>I was trying with variations of: '<code>/\/\/(.*)$</code>'</p>
+",Regex: Get // line but not if start with http://,0
+34,"<p>I will have a ui which has buttons dynamically added to it. In order to test this I want to use robotum. I have two options on how to build the ui, using activities or using fragments. The latter seems to be a better option  for my situation but I read that  robotium does not support fragments. Is there any other option I could consider or am I incorrect in saying robotium does not support fragments</p>
+",testing dynamic android ui with robotium,0
+35,"<p>My images are working fine in anchor text. but when I remove public from URL (by putting .htaccess in root directory) Image path is not working.</p>
+
+<pre><code>&lt;a href=""new_profile.php"" class=""thumbnail""&gt;
+  &lt;img src=""admin_images/noti.png"" alt=""...""&gt;&lt;strong&gt;Profile&lt;/strong&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>This admin_images folder is in Public folder.</p>
+",Image path is not working after removing public from URL in laravel 5.5,0
+36,"<p>This is the code I am using:</p>
+
+<pre><code>Actions act =new Actions(driver);
+act.SendKeys(Keys.Control);
+</code></pre>
+",How to perform Cntrl + A functionality using Selenium with the code written in C#,1
+37,"<p>I don't know how to create search engine in PHP where <code>$_GET['ID']</code> equal in XML tag atribute ID <code>&lt;guest id=""xx""&gt;</code> and extracts only data from the tag with special ID.</p>
+
+<p>You do not know how to solve this problem?</p>
+
+<pre><code>&lt;?xml version=""1.0"" encoding=""utf-8""?&gt;
+&lt;quests&gt;
+    &lt;quest id=""1""&gt;
+        &lt;ID&gt;1&lt;/ID&gt;
+        &lt;QUEST&gt;Katakomby pod městem&lt;/QUEST&gt;
+        &lt;INFO&gt;Asi nevíte že pod naším krásným městem je spousta tajných chodem, které pořádně nikdo neproskoumal. Jsou tu již dlouhá staletí a údajně naši předci v nich ukryli zlatý poklad.&lt;/INFO&gt;
+        &lt;TIME&gt;780&lt;/TIME&gt;&lt;!-- 780 - 13 minut --&gt;
+        &lt;ITEMS1&gt;&lt;/ITEMS1&gt;
+        &lt;XPMIN&gt;180&lt;/XPMIN&gt;
+        &lt;MONEY&gt;800&lt;/MONEY&gt;
+        &lt;LVL&gt;1&lt;/LVL&gt;
+    &lt;/quest&gt;
+
+    &lt;quest id=""2""&gt;
+        &lt;ID&gt;2&lt;/ID&gt;
+        &lt;QUEST&gt;Oprava zříceného mostu&lt;/QUEST&gt;
+        &lt;INFO&gt;Před několika dny strhla záplava starý dřevěný most u radnice. Pomoz jej opravit.&lt;/INFO&gt;
+        &lt;TIME&gt;7200&lt;/TIME&gt;
+        &lt;ITEMS1&gt;&lt;/ITEMS1&gt;
+        &lt;XPMIN&gt;250&lt;/XPMIN&gt;
+        &lt;MONEY&gt;250&lt;/MONEY&gt;
+        &lt;LVL&gt;4&lt;/LVL&gt;
+    &lt;/quest&gt;
+.....And more&lt;quest id=""xx""&gt;&lt;/quest&gt;...
+&lt;/quests&gt;
+</code></pre>
+
+<p>and I have no PHP code, it not function never.</p>
+",XML search atribute with PHP GET,1
+38,"<p>Currently we have struggled with the following for many, many hours before posting this question.</p>
+
+<p>We have a huge number of data-sets similar to the following:</p>
+
+<pre><code>Income                 Inhabitants              Percent
+Below  15000            Below 5000              4.664723
+15000 - 3.000           Below 5000              15.743440
+30000 - 40000           Below 5000              13.994169
+40000 - 50000           Below 5000              12.609329
+50000 - 60000           Below 5000              11.333819
+60000 - 70000           Below 5000              11.370262
+70000 - 100000          Below 5000              14.795918
+Above  100000           Below 5000              5.211370
+Do not know             Below 5000              10.276968
+Below  15000            5000-20000              4.225146
+15000 - 3.000           5000-20000              13.157895
+30000 - 40000           5000-20000              12.733918
+40000 - 50000           5000-20000              11.739766
+60000 - 70000           5000-20000              11.315789
+70000 - 100000          5000-20000              18.728070
+Above  100000           5000-20000              7.880117
+Do not know             5000-20000              9.356725
+Below  15000            20000-110000            4.013588
+15000 - 3.000           20000-110000            11.147458
+30000 - 40000           20000-110000            11.927529
+40000 - 50000           20000-110000            11.751384
+50000 - 60000           20000-110000            9.738299
+60000 - 70000           20000-110000            10.367388
+70000 - 100000          20000-110000            17.929039
+Above  100000           Above 110000            13.198289
+Do not know             Above 110000            9.927026
+Below  15000            Above 110000            4.662941
+15000 - 3.000           Above 110000            10.286413
+30000 - 40000           Above 110000            11.054838
+40000 - 50000           Above 110000            10.513447
+50000 - 60000           Above 110000            9.081383
+60000 - 70000           Above 110000            8.539993
+70000 - 100000          Above 110000            18.389801
+Above  100000           Above 110000            18.040517
+Do not know             Above 110000            9.430667`
+</code></pre>
+
+<p>We want to make stacked bars of the data, showing the distribution between areas.</p>
+
+<p>This did it:    </p>
+
+<pre><code>dg=ggplot(data=frame, aes(x=Inhabitants, ymax=100, y=Percent,fill=eval(parse(text=special))))       
+g=g+geom_bar(stat=""identity"")
+g=g+theme_minimal()
+g=g+xlab("""") + ylab("""")
+g=g+theme(axis.text.y=element_blank(),axis.ticks.y=element_blank(),axis.ticks.x=element_blank()) 
+g=g+scale_fill_discrete("""",guide = guide_legend(reverse=TRUE)) 
+g
+</code></pre>
+
+<p>Nice, we are getting exactly what we want. We just want to add some information: How many percent does each section represent? </p>
+
+<p>With the following code we are close:</p>
+
+<pre><code>g=g+geom_text(aes(label = paste(round(Percent,digits=1),""%""),y=Percent),size = 2,hjust = 0.4, vjust = 1.4, position =""stack"") 
+</code></pre>
+
+<p>Getting this: <a href=""http://s28.postimg.org/lv3zg2cnh/bars2.png"" rel=""nofollow"">http://s28.postimg.org/lv3zg2cnh/bars2.png</a></p>
+
+<p>We just want to place the numbers in the middle of the sections. However, it turns out it is very difficult (for us) to do!</p>
+
+<p>We have tried code like the following, with no luck.</p>
+
+<pre><code>data=transform(frame,pos=round(ave(Percent,Inhabitants,FUN=cumsum)-Percent/2))
+g=ggplot(data, aes(x=Inhabitants, ymax=100, y=Percent, fill=eval(parse(text=special)))) 
+g=g+geom_bar(stat=""identity"")
+g=g+theme_minimal()
+g=g+xlab("""") + ylab("""")
+g=g+theme(axis.text.y=element_blank(),axis.ticks.y=element_blank(),axis.ticks.x=element_blank()) 
+g=g+scale_fill_discrete("""",guide = guide_legend(reverse=TRUE))
+g=g+geom_text(aes(label = paste(round(Percent,digits=1),""%""),y=pos),size = 3,hjust = 0.4, vjust = 0, position =""stack"") 
+g
+</code></pre>
+
+<p>We have checked SO for solutions. Without luck, due to our inexperience with R. After many many hours we are now giving up and would be satisfied with our first solution, were it not for the fact that when we are handling data-sets with more sections it often turns into a mess: <a href=""http://s13.postimg.org/5jxavvohz/bars3.png"" rel=""nofollow"">http://s13.postimg.org/5jxavvohz/bars3.png</a></p>
+
+<p>Our primary question is:</p>
+
+<p>1) How can we prevent labels with values less than 2 percent appearing.</p>
+
+<p>(Our secondary question is: How can we get the values positioned in the middle? )</p>
+",R - ggplot: Selection of which labels to appear in bar stack and their position,0
+39,"<p>im newbie at Objective C, and i have a dumb question about get the return value from a previous method, for example, there is an excercise about converting Celsious into Fahrenheit temperature.
+Here is my code:</p>
+
+<pre><code>    -(float) getTemperature
+   {
+    return arc4random() % 40 + (float)arc4random() /(float);
+   }
+
+    -(float) converter
+   {
+    ...
+   }
+</code></pre>
+
+<p>The getTempature method is return to Celsious temperature, but is there any way to get the value from this method and apply it into ""converter"" method?. Im still new at Obj-C, so still confusing in some cases.</p>
+
+<p>Thank you guys very much !</p>
+",Get value from previous method,0
+40,"<p>I'm new in Windows Phone 8 development, so I need a help, because I want to create a page which has a grid/table, like we have the ASP.NET grid, is it possible?</p>
+
+<p>I want to create an app with championship classification, so I need a table to show the teams classifications, points and etc. I have already saw apps in store with this grid like I want to reproduce, inclusive the bing Sports app has one.</p>
+",How to make a grid in Windows Phone 8,1
+41,"<p>I'm trying to recreate a plot from <em>An Introduction to Statistical Learning</em> and I'm having trouble figuring out how to calculate the confidence interval for a probability prediction. Specifically, I'm trying to recreate the right-hand panel of this figure (<a href=""https://raw.githubusercontent.com/tsansom/islpy/master/figures/Chapter7/7.1.png"" rel=""nofollow noreferrer"">figure 7.1</a>) which is predicting the probability that wage>250 based on a degree 4 polynomial of age with associated 95% confidence intervals. The wage data is <a href=""https://raw.githubusercontent.com/tsansom/islpy/master/data/Wage.csv"" rel=""nofollow noreferrer"">here</a> if anyone cares.</p>
+
+<p>I can predict and plot the predicted probabilities fine with the following code</p>
+
+<pre><code>import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+from sklearn.preprocessing import PolynomialFeatures
+
+wage = pd.read_csv('../../data/Wage.csv', index_col=0)
+wage['wage250'] = 0
+wage.loc[wage['wage'] &gt; 250, 'wage250'] = 1
+
+poly = Polynomialfeatures(degree=4)
+age = poly.fit_transform(wage['age'].values.reshape(-1, 1))
+
+logit = sm.Logit(wage['wage250'], age).fit()
+
+age_range_poly = poly.fit_transform(np.arange(18, 81).reshape(-1, 1))
+
+y_proba = logit.predict(age_range_poly)
+
+plt.plot(age_range_poly[:, 1], y_proba)
+</code></pre>
+
+<p>But I'm at a loss as to how the confidence intervals of the predicted probabilities are calculated. I have thought about bootstrapping the data many times to get the distribution of probabilities for each age but I know there is an easier way which is just beyond my grasp.</p>
+
+<p>I have the estimated coefficient covariance matrix and the standard errors associated with each estimated coefficient. How would I go about calculating the confidence intervals as shown in the right-hand panel of the figure above given this information? </p>
+
+<p>Thanks!</p>
+",Confidence interval of probability prediction from logistic regression statsmodels,0
+42,"<p>Is there a recommended reference manual for python that's better than the official docs? I'm an experienced programmer (PHP, C#, javascript, and some C most recently), and I find the python manual pretty lacking compared the PHP manual and MSDN. In particular, the official docs never seem to tell me what errors can happen if I pass in something invalid, and there's apparently not a way to navigate within a module.</p>
+
+<p>Take <a href=""http://docs.python.org/library/os.html"" rel=""nofollow"">the os module</a> for example. There's no list of constants or methods I can call on that page, so I have to Ctrl+f for ""<code>stat(</code>"" until I find it. Then, once I do find it, it doesn't tell me what to expect if I call <code>stat</code> with a directory that doesn't exist, so I just have to try it in a terminal and see what happens.</p>
+
+<p>This seems wildly inefficient… how do python programmers deal with this?</p>
+",Reference manual for python?,1
+43,"<p>In overall cases, the Close method semantically just change the state of a object that can be changed again with the Open method, indefinitely.</p>
+
+<p>In other hand the semantics of IDisposable.Dispose() method put the object in a state that cannot be undone. </p>
+
+<p>So, why several answers about ""close x dispose"" and even MSDN pattern shows Close method calling Dispose ?</p>
+",Dispose x Close,0
+44,"<p>I have main activity (terms and conditions) and registration activity along with other activities in the app. Once the user is agreed and registered in to the app after he installed it, the user should not be seen again those two pages. Even if he suddenly quits out without clicking exit, those activities should not be appeared again. I have used shared preferences. It's working but when the user does not clicks the exit and goes back, the activities are again appearing. Please help me.. thanks friends..</p>
+",Activities should be appeared only once,1
+45,"<p>i want save number of _ID column in sqlite if its row deleted      </p>
+
+<pre><code>  if( deleting row in sqlite table without delete _ID column if it ""_ID"" declared as  `INTEGER PRIMARY KEY`== true)
+     {How() ;}
+  else{do_not_vote_this_question_down();} .
+</code></pre>
+
+<p>thanks in advance !</p>
+",How delete row without deleting its _ID column value?,0
+46,"<p>I've switched to using the <a href=""http://www.dropzonejs.com/"" rel=""noreferrer"">Dropzone.js</a> plugin for drag-and-drop file uploads. How can I write a Capybara test to ensure this functionality keeps on working?</p>
+
+<p>Previously I had a template with an input file element:</p>
+
+<pre><code>&lt;input type=""file"" name=""attachments""&gt;
+</code></pre>
+
+<p>And the test was simple:</p>
+
+<pre><code>When(/^I upload ""([^""]*)""$/) do |filename|
+  attach_file(""attachments"", File.expand_path(filename))
+  # add assertion here
+end
+</code></pre>
+
+<p>However this no longer works because Dropzone doesn't have a visible file input.</p>
+",How do you test uploading a file with Capybara and Dropzone.js?,0
+47,"<p>I'm trying to have form data upload into a spreadsheet and at the same time upload a file into my google drive. The file upload is working. But as I'm not a programmer at all, I'm having difficulties putting the info into a spreadsheet. I just don't know if the spreadsheet has to exist or not and how to access it. Can someone please help? 
+My current code is below but gives an error message. </p>
+
+<p>I'm not sure what the submissionSSkey should be, is it the name of the spreadsheet? I'm sorry for not knowing such a trivial thing. But I'm really stuck here. And should I do anything else with the spreadsheet? Fill out the first row for instance?</p>
+
+<pre><code>// start form
+var submissionSSKey = ""Uploading"";
+
+function doGet(e) {
+return HtmlService.createHtmlOutputFromFile('form.html');
+}
+var url;
+
+
+function processForm(form) {
+try {
+
+  // Record submission in spreadsheet
+var sheet = SpreadsheetApp.openById(submissionSSKey).getSheets()[0];
+var lastRow = sheet.getLastRow();
+var targetRange = sheet.getRange(lastRow+1, 1, 1, 4).setValues([[LastName,FirstName,EmailAddress,AbstractTitlel]]);
+var dropbox = ""Abstracts XXI"";
+var folder, folders = DriveApp.getFoldersByName(dropbox);
+
+if (folders.hasNext()) {
+  folder = folders.next();
+} else {
+  folder = DriveApp.createFolder(dropbox);
+}
+
+var blob = form.myFile;    
+var file = folder.createFile(blob);    
+file.setName( form.select + ""_""  + form.LastName + new Date );
+file.setDescription( form.AbstractTitle);
+url=file.getUrl();    
+return ""\&lt;br/&gt; File uploaded successfully. \&lt;br/&gt; \&lt;br/&gt; Thank you for the submission of your abstract for SBDD XXI 2016. \&lt;br/&gt; \&lt;br/&gt; To view the uploaded abstracht please copy the URL below into your browser \&lt;br/&gt;"" +  file.getUrl();
+
+} catch (error) {
+
+return error.toString();
+}}
+</code></pre>
+",Upload a file into Google Drive and record Form answers in a spreadsheet,0
+48,"<p>For some reason my JavaScript is now displaying as code instead of running. It happened after I started optimizing my JavaScript and CSS and minifying it. 
+Anyone care to help me :/</p>
+
+<p><a href=""http://PattersonCode.ca"" rel=""nofollow"">http://PattersonCode.ca</a></p>
+",JavaScript displaying code instead of running,1
+49,"<p>I need to convert <code>string</code> fields into <code>integer</code> and use <code>enum</code> instead.
+What is the best way to do this without losing data?</p>
+
+<p>This is current migration:</p>
+
+<pre><code>class CreateSystems &lt; ActiveRecord::Migration
+  def change
+    create_table :systems do |t|
+      t.string :operation
+      t.string :status
+
+      t.timestamps null: false
+    end
+  end
+end
+</code></pre>
+
+<p>Then I change type of the fields like so:</p>
+
+<pre><code>class ChangeColumnsForSystems &lt; ActiveRecord::Migration
+  def change
+    change_column :systems, :operation, :integer
+    change_column :systems, :status, :integer
+  end
+end
+</code></pre>
+
+<p>And update model file. </p>
+
+<p>/app/models/system.rb</p>
+
+<pre><code>...
+enum operation { start: 0, stop: 1 }
+enum status { init: 0, working: 1, complete: 2 }
+...
+</code></pre>
+
+<p>How can I update old data?</p>
+",Rails 4 migration to change columns data type from string to integer and back preserving data (postgres),0
+50,"<p>I am working on a Spring-MVC application in which we are using Hibernate and c3p0 for Database transactions and connection pooling. Most of the time it works really good, no issues. But in certain situations I have to copy a lot of objects and files in the current transaction. When that happens, the entire server slows down and finally I start getting <code>could not rollback exception</code> . Anything wrong with my c3p0 settings? Thank you.</p>
+
+<p>pom.xml :</p>
+
+<pre><code> &lt;!--- Hibernate dependencies --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+            &lt;artifactId&gt;hibernate-validator&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+            &lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+            &lt;artifactId&gt;hibernate-entitymanager&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+            &lt;artifactId&gt;hibernate-c3p0&lt;/artifactId&gt;
+            &lt;version&gt;4.3.9.Final&lt;/version&gt;
+        &lt;/dependency&gt;
+</code></pre>
+
+<p>root-context.xml :</p>
+
+<pre><code>&lt;beans:bean id=""dataSource"" class=""org.apache.commons.dbcp.BasicDataSource""
+            destroy-method=""close""&gt;
+    &lt;beans:property name=""driverClassName"" value=""org.postgresql.Driver""/&gt;
+    &lt;beans:property name=""url""
+                    value=""jdbc:postgresql://localhost:PORT/DB_NAME""/&gt;
+    &lt;beans:property name=""username"" value=""USERNAME""/&gt;
+    &lt;beans:property name=""password"" value=""PASSWORD""/&gt;
+    &lt;beans:property name=""removeAbandoned"" value=""true""/&gt;
+    &lt;beans:property name=""removeAbandonedTimeout"" value=""20""/&gt;
+    &lt;beans:property name=""defaultAutoCommit"" value=""false""/&gt;
+&lt;/beans:bean&gt;
+
+&lt;!-- Hibernate 4 SessionFactory Bean definition --&gt;
+&lt;beans:bean id=""hibernate4AnnotatedSessionFactory""
+            class=""org.springframework.orm.hibernate4.LocalSessionFactoryBean""&gt;
+    &lt;beans:property name=""dataSource"" ref=""dataSource""/&gt;
+    &lt;beans:property name=""packagesToScan"" value=""com.ourapp.spring.model""/&gt;
+    &lt;beans:property name=""hibernateProperties""&gt;
+        &lt;beans:props&gt;
+            &lt;beans:prop key=""hibernate.dialect""&gt;org.hibernate.dialect.PostgreSQL9Dialect&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.show_sql""&gt;false&lt;/beans:prop&gt;
+               &lt;!--&lt;beans:prop key=""hibernate.jdbc.batch_size""&gt;1000&lt;/beans:prop&gt;--&gt;
+            &lt;beans:prop key=""hibernate.hbm2ddl.auto""&gt;update&lt;/beans:prop&gt;
+            &lt;beans:prop key=""cache.use_second_level_cache""&gt;true&lt;/beans:prop&gt;
+            &lt;beans:prop key=""cache.use_query_cache""&gt;true&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.order_updates""&gt;true&lt;/beans:prop&gt;
+            &lt;beans:prop key=""show_sql""&gt;false&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.c3p0.min_size""&gt;1&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.c3p0.max_size""&gt;750&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.c3p0.acquire_increment""&gt;1&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.c3p0.idle_test_period""&gt;1000&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.c3p0.max_statements""&gt;150&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.c3p0.timeout""&gt;1200&lt;/beans:prop&gt;
+            &lt;beans:prop key=""hibernate.connection.release_mode""&gt;auto&lt;/beans:prop&gt;
+        &lt;/beans:props&gt;
+    &lt;/beans:property&gt;
+
+&lt;/beans:bean&gt;
+</code></pre>
+
+<p>Thank you. </p>
+",Hibernate : C3p0 pool configuration slowing down entire server.,0
+51,"<p>I am using SQL 2000. I have a stored proc, <code>spGetApplicantList</code>, which cannot be modified. I need to get the unique <code>LastNameInitials</code> of all the records in that stored proc, so the list of applicants can be sorted alphabetically.</p>
+
+<p>Basically what I need is</p>
+
+<pre><code>SELECT DISTINCT LEFT(LastName, 1) as [LastNameInitial]
+FROM spGetApplicantList
+ORDER BY LastnameFirstInitial
+</code></pre>
+
+<p>How can I create a new stored proc, <code>spGetLastNameInitial</code>, by using the recordset returned from <code>spGetApplicantList</code>?</p>
+
+<p>I can't seem to get the syntax correct.</p>
+",Calling resultsets from a storedproc,0
+52,"<p>I have a ns-angular app that is structured as follows : </p>
+
+<p>in the <code>app.component</code> I have a master <code>page-router-outlet</code> with 2 pages</p>
+
+<ul>
+<li>Login</li>
+<li>Main</li>
+</ul>
+
+<p>Routing is configured in the following way : </p>
+
+<pre><code>const routes: Routes = [
+    { path: '', redirectTo: 'start', pathMatch: 'full' },
+    { path: 'start', loadChildren: './views/login/start.module#StartModule' },
+    { path: 'main', loadChildren: './views/main/main.module#MainModule' }
+];
+
+@NgModule({
+    imports: [NativeScriptRouterModule.forRoot(routes)],
+    exports: [NativeScriptRouterModule]
+})
+export class AppRoutingModule { }
+</code></pre>
+
+<p>In the main component I have static action bar and a child <code>router-outlet</code> that navigates between these components.
+Again routing is defined as : </p>
+
+<pre><code>const mainRoutes: Routes = [
+    {
+        path: '', component: MainComponent, children: [
+            { path: '', redirectTo: 'main/explore', pathMatch: 'full' },
+            { path: 'camera', loadChildren: './camera/camera.module#CameraModule' },
+            { path: 'explore', loadChildren: './explore/explore.module#ExploreModule' }
+        ]
+    }
+];
+
+export const MainRouting: ModuleWithProviders = RouterModule.forChild(mainRoutes);
+</code></pre>
+
+<p>What currently happens is that if I am in the - let's say- <code>explore</code> component ( <code>/main/explore</code> ), I navigate to the the camera component ( <code>/main/camera</code> ) and I press back on my android device, instead of going back to the explore component I go to the start module.
+I read the documentation on angular navigation, but even with the following code</p>
+
+<pre><code>android.on(AndroidApplication.activityBackPressedEvent, (data: AndroidActivityBackPressedEventData) =&gt; {
+    this.routerExtensions.back();
+});
+</code></pre>
+
+<p>I am unable to return to the previous component.
+How would I achieve that?</p>
+",Nativescript angular navigate to previous component,0
+53,"<p>Could you please give an explanation about the difference of Reference Type and being Mutable concepts in C#? 
+String is reference type but inmutable. Please, give more details about what is the conceptual difference between these two concepts and why they are independent? </p>
+","C# Difference between Reference type and ""Mutable"" concept?",1
+54,"<p>I have the batch script below. It should read the first character of every line of a text file. Is that is a to z, it should make a subfolder in the corresponding folder. It is somethins else, it should be created in the ""_other"" folder.</p>
+
+<p>So if i have a list:</p>
+
+<pre><code>123test
+aaatest
+bbbtest
+</code></pre>
+
+<p>It should create:</p>
+
+<pre><code>c:\dirs\_other\123test
+c:\dirs\a\aaatest
+c:\dirs\b\bbbtest
+</code></pre>
+
+<p>But for some reason my last if/else does not work. Why not? this is the script:</p>
+
+<pre><code>setlocal EnableDelayedExpansion
+set file=c:\klantenlijst.txt
+FOR /F ""delims=~"" %%i IN (!file!) DO (
+set var=%%i 
+set str=!var:~0,1!
+IF !str!==A ( set letter=1 )
+IF !str!==B ( set letter=1 )
+IF !str!==C ( set letter=1 )
+IF !str!==D ( set letter=1 )
+IF !str!==E ( set letter=1 )
+IF !str!==F ( set letter=1 )
+IF !str!==G ( set letter=1 )
+IF !str!==H ( set letter=1 )
+IF !str!==I ( set letter=1 )
+IF !str!==J ( set letter=1 )
+IF !str!==K ( set letter=1 )
+IF !str!==L ( set letter=1 )
+IF !str!==M ( set letter=1 )
+IF !str!==N ( set letter=1 )
+IF !str!==O ( set letter=1 )
+IF !str!==P ( set letter=1 )
+IF !str!==Q ( set letter=1 )
+IF !str!==R ( set letter=1 )
+IF !str!==S ( set letter=1 )
+IF !str!==T ( set letter=1 )
+IF !str!==U ( set letter=1 )
+IF !str!==V ( set letter=1 )
+IF !str!==W ( set letter=1 )
+IF !str!==X ( set letter=1 )
+IF !str!==Y ( set letter=1 )
+IF !str!==Z ( set letter=1 )
+
+IF !letter!==1 ( md c:\Dirs\!str!\!var! ) ELSE ( md c:\Dirs\_Other\!var! )
+
+)
+</code></pre>
+",Creating a folder from text file with indexing letters,0
+55,"<p>I am looking to add a timer to my app which is built using react native.</p>
+
+<p>I have looked at the link to the <a href=""https://facebook.github.io/react-native/docs/timers.html#content"" rel=""noreferrer"">timer mixin</a> in the documentation however I have built the rest of the app using es6 so this won't be compatible.</p>
+
+<p>I have tried the below.</p>
+
+<p>In my Main class I have a function called <code>getTimerCountDown</code></p>
+
+<pre><code>getTimerCountDown() {
+    setTimeout(() =&gt; {
+      this.setTimeRemaining(this.getTimeRem()-1);
+    }, 1000);
+}
+
+getTimeRem() {
+    return this.state.timeRemaining;
+}
+</code></pre>
+
+<p>I have tried calling this in <code>componentDidUpdate</code> as shown below. This works as I want it to if I don't make any other interactions with the UI.</p>
+
+<p>If I do (eg I have a button I can click on the view.) as `componentDidUpdate gets called again the conunter gets really quick (as it is getting called x number of times)</p>
+
+<pre><code>componentDidUpdate(){
+    this.getTimerCountDown();
+}
+</code></pre>
+
+<p>I am not sure if I am completly on the wrong track here or a small change to what I have done can get me what I want.
+What is the best way to get a countdown timer working in react native using es6?</p>
+
+<p>Timer Class 
+on main page</p>
+
+<pre><code>&lt;Timer timeRem={this.getTimeRem()} /&gt;
+</code></pre>
+
+<p>returns</p>
+
+<pre><code>render(){
+    return (
+        &lt;View style={styles.container}&gt;
+            &lt;Text&gt; This is the Timer : {this.props.setTimer}  - {this.props.timeRem} &lt;/Text&gt;
+        &lt;/View&gt;
+    )
+}
+</code></pre>
+",create timer with react native using es6,0
+56,"<p>I want to handle simple form. Here's form from my signUp.jsp, where from I receive my data</p>
+
+<pre><code>&lt;form:form method=""POST"" commandName=""user-entity"" action=""process.html""&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;form:label path=""userName""&gt;Name:&lt;/form:label&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;form:input path=""userName"" /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;form:label path=""label""&gt;Age:&lt;/form:label&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;form:label path=""label""/&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan=""2""&gt;
+            &lt;input type=""submit"" value=""Submit""/&gt;
+        &lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;  
+&lt;/form:form&gt;
+</code></pre>
+
+<p>And part of my result.jsp</p>
+
+<pre><code>&lt;p&gt;User's name is ${user.userName}. The age is ${user.age}.&lt;/p&gt;
+</code></pre>
+
+<p>And UserController.java    </p>
+
+<pre><code>    @Controller
+    public class UserController {
+        @RequestMapping(value = ""/signUp"")
+        public ModelAndView signUpPage() {
+            return new ModelAndView(""signUp"", ""user-entity"", new User());
+        }
+
+        @RequestMapping(value = ""/process"")
+        public ModelAndView processUser(@ModelAttribute User user) {
+            ModelAndView model = new ModelAndView();
+            model.setViewName(""result"");
+            model.addObject(""user"", user);
+            return model;
+        }
+
+    }
+</code></pre>
+
+<p>As the result I get</p>
+
+<p><code>User's name is ${user.userName}. The age is ${user.password}.</code>
+and i have no idea why. Where might be the problem?</p>
+",Spring JSP passing variables,0
+57,"<p>I have another problem with my little application. I use N-Audio library and external MIDI keyboard (88-keys) connected to PC via USB cable.</p>
+
+<p>Everything is ok, I can play on my MIDI keyboard, application reads keys and plays specific Notes = .wav files from resources.</p>
+
+<p>But the problem is when I play a little longer than 2 minutes. After that time sounds are playing creepy, something is wrong with them - they sounds like crazy compression quality appears, and finally they are gone at all, but application is still receiving signals from MIDI keyboard.</p>
+
+<p>I have reader like this (for each of 88 keys):</p>
+
+<pre><code>// WaveFileReader
+private NAudio.Wave.WaveFileReader wave = null;
+private NAudio.Wave.WaveFileReader wave0 = null;
+</code></pre>
+
+<p>and direct sound out:</p>
+
+<pre><code>// DirectSoundOut
+private NAudio.Wave.DirectSoundOut output = null;
+private NAudio.Wave.DirectSoundOut output0 = null;
+</code></pre>
+
+<p>and then, all sounds (notes) are played this way (for each wave, wave0, wave1, etc... and output, output1, output2, etc...):</p>
+
+<pre><code>if (nutka == ""C1"" &amp;&amp; msg.Velocity != 0)
+{
+    wave1 = new NAudio.Wave.WaveFileReader(Properties.Resources.C1);
+    output1 = new NAudio.Wave.DirectSoundOut();
+    output1.Init(new NAudio.Wave.WaveChannel32(wave1));
+    output1.Play();
+}
+</code></pre>
+
+<p>Can't find out what the realy main problem is, and how can I resolve it.</p>
+",USB Keyboard - buffering files,0
+58,"<p>I need to convert HTML documents into valid XML, preferably XHTML. What's the best way to do this? Does anybody know a toolkit/library/sample/...whatever that helps me to get that task done?</p>
+
+<p>To be a bit more clear here, my application has to do the conversion automatically at runtime. I don't look for a tool that helps me to move some pages to XHTML manually.</p>
+",How to convert HTML to XHTML?,1
+59,"<p>I would like to have a view that scrolls. The view would have a header, which would initially take about a third of the screen. While the user scrolls, the header will start to get off screen, but once there is about 50px left, I would like the header to stick and the rest of the screen would still scroll... Any idea would be helpful, I'm more looking about methods than actual code. Here is an ascii art representation of what I'm trying to do :</p>
+
+<pre><code>+-------------+   +-------------+   +-------------+   +-------------+   +-------------+
+| ###         |   | ##          |   | #           |   | #           |   | #           |
+| ##          |   | #           |   |-------------|   |-------------|   |-------------|
+| #           |   |-------------|   | 1. Lorem    |   | 2. Lorem    |   | 3. Lorem    |
+|-------------|   | 1. Lorem    |   | 2. Lorem    |   | 3. Lorem    |   | 4. Lorem    |
+| 1. Lorem    |   | 2. Lorem    |   | 3. Lorem    |   | 4. Lorem    |   | 5. Lorem    |
+| 2. Lorem    |   | 3. Lorem    |   | 4. Lorem    |   | 5. Lorem    |   | 6. Lorem    |
+| 3. Lorem    |   | 4. Lorem    |   | 5. Lorem    |   | 6. Lorem    |   | 7. Lorem    |
+| 4. Lorem    |   | 5. Lorem    |   | 6. Lorem    |   | 7. Lorem    |   | 8. Lorem    |
+| 5. Lorem    |   | 6. Lorem    |   | 7. Lorem    |   | 8. Lorem    |   | 9. Lorem    |
+| 6. Lorem    |   | 7. Lorem    |   | 8. Lorem    |   | 9. Lorem    |   | A. Lorem    |
+| 7. Lorem    |   | 8. Lorem    |   | 9. Lorem    |   | A. Lorem    |   | B. Lorem    |
++-------------+   +-------------+   +-------------+   +-------------+   +-------------+
+</code></pre>
+",Implement a sticky header like on UITableView,0
+60,"<p>I'll keep this brief for now… I have no idea what this problem could have to do with, so I'll withhold any actual code until someone points me in a direction.</p>
+
+<p>I have a website. This website has some images. All but two of these images display fine in any browser. Two of these images display fine in every browser EXCEPT Firefox. My only lead is this: looking at the two elements in Firefox's ""tools"", I notice that both elements have been assigned the class ""wmwfsqbhwdmaytbjhpmp"". Same gibberish for each element. As you can probably tell, I didn't put that there. Seems likely to be related. Maybe it isn't though.</p>
+
+<p>So… do you need my css? My HTML? Could this be a browser issue? I'm a relative beginner to all this, so please bear with me, and please point me in the right direction.</p>
+
+<p>Thanks.</p>
+
+<p>EDIT: Here's the html…</p>
+
+<pre><code>&lt;header&gt;
+&lt;div id=""logo""&gt;
+    &lt;img src=""images/main/logoText.png"" alt=""logoText""&gt;
+&lt;/div&gt;
+&lt;div id=""bannerAd""&gt;
+    &lt;img src=""images/main/topAd.jpg"" alt=""bannerAdTemp""&gt;
+&lt;/div&gt;
+&lt;div class=""clear""&gt;&lt;/div&gt;
+</code></pre>
+
+<p></p>
+
+<p>To repeat: logoText.png displays fine in any browser, topAd.jpg displays fine in any browser except Firefox. topAd.jpg is the one with the gibberish class applied. Nowhere do I apply classes to it with jquery or anything like it.</p>
+
+<hr>
+
+<p>SOLUTION: Seems to be AdBlock's fault. Further reading: <a href=""https://stackoverflow.com/questions/4869154/how-to-detect-adblock-on-my-website"">How to detect Adblock on my website?</a></p>
+","Firefox not displaying images, assigns gibberish class name to element",1
+61,"<p>I used the article <a href=""http://www.icodeblog.com/2010/09/29/adding-local-weather-conditions-to-your-app-part-22-accessing-googles-xml-weather-api/"" rel=""nofollow"">http://www.icodeblog.com/2010/09/29/adding-local-weather-conditions-to-your-app-part-22-accessing-googles-xml-weather-api/</a> to add some real basic weather features to my app, mainly the current temperature and conditions.  However, it looks like at the end of August, Google shutdown their weatherAPI and the new iGoogle doesn't use XML.  So, are there any fairly simple options out there that will allow me to get current temp and conditions for 1 set zip code?</p>
+",Alternatives to Google Weather API for iPhone,1
+62,"<p>I want to write a firestore function that onCreate of a new document
+it will update couple different docs.</p>
+
+<p>for example for statistics, by adding new sports session doc to sessions collection.
+it will update the docs: yearlyStats, quartlyStats, monthlyStats and dailyStats.</p>
+
+<p>so the question, how I write 4 returns for one trigger, that each return is to different docRef.</p>
+
+<p>Do I need to write 4 separated functions with same trigger? or I can do it all in one function?</p>
+","Writing 4 returns for one trigger, that each return is to different docRef",0
+63,"<p>I am looking for the best practices with PHPUnit testing a project on KohanaPHP framework.</p>
+",Is there any good tutorial (example) for unit testing kohana base project?,1
+64,"<p>I have object TextLayer with white text color string. Then I animate text color selection (second character changes color white -> blue).</p>
+
+<p>How can I get this selection and color programmatically?</p>
+",How can I programmatically get text selection in Adobe After Effects with ExtendScripts,0
+65,"<p>Are you aware of alternatives to <a href=""http://ckan.org/"" rel=""noreferrer"">CKAN</a>? I am searching for a metadata managing portal software with a similar feature set like CKAN.</p>
+
+<p>The implementation would preferably be either LAMP or Java.</p>
+",Alternatives to CKAN,1
+66,"<p>I want to start a new C++ (Qt) Open Source project and I'm wondering if there is an existing template somewhere for files usually found in an Open Source project but that are not purely  source code (README, LICENSE, CHANGELOG, etc.)</p>
+
+<p>I could probably find a popular Open Source project for inspiration but if there is some existing generic templates, I will use that instead.</p>
+
+<p>Thanks.</p>
+",Is there an existing template for a new C++ Open Source project,1
+67,"<p>I created a restful controller with the command <code>grails generate-restful-controller Domain</code>, how to set <code>scaffold = true</code> in the controller created, to use the template RestfulController.groovy</p>
+",How to set restful controller scaffold in grails,0
+68,"<p>Is there any WORKING plugin for Vim 7.4 that would automatically close brackets ('{}', '[]', '()') and maybe insert some carriage returns (for '{}' at least)?</p>
+
+<p>I know this question has been asked quite a few times but none of the answers either do not seem to work in vim 7.4 or the plugin has not been updated or something.</p>
+
+<p>So far I've tried vim-smartinput, autoclose and delimitmate and NONE of these have managed to insert any closing characters even though I have enabled the plugins and they otherwise seem to be active. I don't know if there has been some changes in vim that somehow breaks these plugins. None of these plugins seem to be updated in a ~year at least. Any working solutions that would work with vim 7.4?</p>
+",Automatic closing brackets for Vim,1
+69,"<p>is it possible to have some kind of list / array / vector of different structs?</p>
+
+<p>For example in <code>MFC</code> there are <code>CObject</code> and <code>CArray</code> but without MFC:</p>
+
+<p>I can do something alike</p>
+
+<pre><code>std::vector&lt;void*&gt; pVec;
+{
+  MYSTRUCT m = new MYSTRUCT;
+  pArr.push_back(m);
+  // looks fine here
+}
+//what is in my vector now?
+</code></pre>
+
+<p>Is there something that can handle it?</p>
+",List (vector) of different structs,0
+70,"<p>I'm looking for something like the notification bar of Facebook; the ones which say how many ""friend requests"", ""Notification"" or ""Messages"" you have. Is there anything fancy implemented with bootstrap, foundation or... that we can use? or I need to use CSS and.. to create my own?</p>
+
+<p>Thanks</p>
+",Notication bars like Facebook,1
+71,"<p>I am working with c# windows application and i need to enter some record to database after inserting in to textbox. I have tried this code </p>
+
+<pre><code>private void textBoxItemCode_KeyDown(object sender, EventArgs e)
+{
+    if (e.KeyCode == Keys.Enter)
+    {
+       MessageBox.Show(""You have entered the correct key."");
+    }
+
+}
+</code></pre>
+
+<p>but i am getting an error near e.KeyCode so how to make it</p>
+",An error in key Down function,1
+72,"<p>I have a function that has an output as a 4 character String like ""1000"". I need to convert this into a vector of dimension (4,1) in order to be able to make computation with matrices.
+Any idea or help? Thank you very much in advance.</p>
+",Convert a String to a Vector in Java,1
+73,"<p>I'm trying to create those diagonal stripe layout in CSS, like this: <a href=""http://www.website-gallery.com/wp-content/uploads/tdomf/355/Nike%20Bloed%20Oranje%20Art%20Challenge%202.0.png"" rel=""nofollow"">http://www.website-gallery.com/wp-content/uploads/tdomf/355/Nike%20Bloed%20Oranje%20Art%20Challenge%202.0.png</a></p>
+
+<p>Here's my codepen: <a href=""http://codepen.io/Chiz/pen/zvWRNW"" rel=""nofollow"">http://codepen.io/Chiz/pen/zvWRNW</a></p>
+
+<p>It looks ok, but the problem is the ""div class=""blacktop"" doesn't show up. I want it to overlap the gray div, and it seems z-index has no effect either even though I set position:relative to all DIVs.</p>
+
+<p><div class=""snippet"" data-lang=""js"" data-hide=""false"">
+<div class=""snippet-code"">
+<pre class=""snippet-code-css lang-css prettyprint-override""><code>body {
+  overflow: hidden;
+}
+
+div {
+  position: relative;
+}
+
+div.gray, div.blackbottom {
+  width: 135%;
+  height: 450px;
+  background-color: gray;
+  margin: -10px 0 0 -140px;
+  z-index: 100;
+  -webkit-transform: skew(-20deg, -20deg);
+  -moz-prop: skew(-20deg, -20deg);
+  -ms-transform: skew(-20deg, -20deg);
+  transform: skew(-20deg, -20deg);
+  -webkit-transform: rotate(8deg);
+  -moz-prop: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+}
+
+div.blackbottom {
+  margin-top: -100px;
+  background-color: white;
+  z-index: 200;
+  -webkit-transform: rotate(17deg);
+  -moz-prop: rotate(17deg);
+  -ms-transform: rotate(17deg);
+  transform: rotate(17deg);
+}
+
+div.blacktop {
+  width: 135%;
+  height: 200px;
+  background-color: black;
+  z-index: 300;
+}</code></pre>
+<pre class=""snippet-code-html lang-html prettyprint-override""><code>&lt;div class=""gray""&gt;&lt;/div&gt;
+&lt;div class=""blackbottom""&gt;&lt;/div&gt;
+&lt;div class=""blacktop""&gt;&lt;/div&gt;</code></pre>
+</div>
+</div>
+</p>
+",DIV doesn't show up and z-index has no effect either,0
+74,"<p>Where can I find a C or C++ library for reading and manipulating Unix configuration files (<code>format: name=value\n</code>)?</p>
+",C/C++ Unix configuration file library,1
+75,"<p>I know <code>Window.sizeToScene()</code> will resize the window to the size that its scene needs, but the position of the window does not adjust accordingly (i.e. the stationary point is top-left corner of the window). Is there any way to make the window resize itself, and keep the window's center at the same place (i.e. make the stationary point at the center of the window)?</p>
+",JavaFX: Window.sizeToScene() center at original position,0
+76,"<p>I tried different tool for writing javascript code such as netBeam and eclipse. </p>
+
+<p>They are great tool for developing javascript library but they have the disadvantages to rely on java which is not very fast at all for my laptop (1GB of memory and 1.1Ghz CPU).</p>
+
+<p>Can you please suggest me an open source tool to help developers writing JavaScript libraries? </p>
+",Tool for writing javascript code,1
+77,"<p>While making a form to input data into a table, I keep getting the following error; </p>
+
+<p>""You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES  ('Michael Everhart','Toyoda,''Machine Shop ESP','2013-08-02','','','' at line 2on the server.""</p>
+
+<p>As a PHP beginner I can't seem to locate the syntax error that I have. Can anyone help me with this please?  </p>
+
+<p>Here's the code:</p>
+
+<pre><code>mysql_select_db(""audits"", $con);
+
+$fixed =""0"";
+$safety=""INSERT INTO audits.safety
+ (Auditor,Area,ESP, Date, SOT1, SOT2, SOT3, SOT4, SOT5, SOT6, SOT7, SOT8, SOT9, SOT10, SOT11, SOT12, SOT13, SOT14, SOT15, SOT16, SOT17, SOT18, SOT19, fixed)
+VALUES
+ ('$name','$area,''$esp','$when','$SOT1','$SOT2','$SOT3','$SOT4','$SOT5','$SOT6','$SOT7','$SOT8','$SOT9','$SOT10','$SOT11','$SOT12','$SOT13','$SOT14','$SOT15','$SOT16','$SOT17','$SOT18','$SOT19', $fixed)"";
+mysql_query ($safety,$con);
+IF (!mysql_query($safety,$con))
+{
+die('Error: '. errorMail());
+  }
+  echo ""1 safety finding added"";
+</code></pre>
+",PHP form input syntax error,1
+78,"<p>I have a probably very simple question. I have a dataset with rows of different time periods. Every year a new time period is added to the dataset. 
+In my dataset I have period 52, 53 and 54. Soon period 55 will be added.
+In the code below I extract the rows from the latest period (54):</p>
+
+<pre><code>data new;
+set old;
+if period=54;
+run;
+</code></pre>
+
+<p>Instead of hardcoding 54 (and soon 55) I want SAS to be able to identify the largest time period, so I don't have to correct the number every time a new period is added to the dataset. I have tried this:</p>
+
+<pre><code>data new;
+set old;
+if period=max(period);
+run;
+</code></pre>
+
+<p>But the max function requires at least two arguments, and that is not what I want. Can anybody tell me which function to use instead?</p>
+
+<p>Thanks a lot.</p>
+
+<p>Kind regards Maria</p>
+",SAS max value of a varible,0
+79,"<p>Is there some kind of ""backlog"" of Scala's design issues or mistakes, which are planned/not planned to be solved in a future release?</p>
+
+<p>I know that there is Trac and the SID process, but in both cases you only see the changes after they have been made. </p>
+
+<p>Maybe I miss some existing infrastructure where language/specification changes can be collected and discussed?</p>
+",Are there any language or specification changes planned for a future release of Scala?,1
+80,"<p>I'm doing some data processing with Spark via the Python API. Here's a simplified bit of the class I'm working with:</p>
+
+<pre><code>class data_processor(object):
+    def __init__(self,filepath):
+        self.config = Config() # this loads some config options from file
+        self.type_conversions = {int:IntegerType,str:StringType}
+        self.load_data(filepath)
+        self.format_age()
+
+    def load_data(self,filepath,delim='\x01'):
+        cols = [...] # list of column names 
+        types = [int, str, str, ... ] # list of column types
+        user_data = sc.textFile(filepath,use_unicode=False).map(lambda row: [types[i](val) for i,val in enumerate(row.strip().split(delim))])
+        fields = StructType([StructField(field_name,self.type_conversions[field_type]()) for field_name,field_type in zip(cols,types)])
+        self.user_data = user_data.toDF(fields)
+        self.user_data.registerTempTable('data')
+
+    def format_age(self):
+        age_range = self.config.age_range # tuple of (age_min, age_max)
+        age_bins = self.config.age_bins # list of bin boundaries
+        def _format_age(age):
+            if age&lt;age_range[0] or age&gt;age_range[1]:
+                return None
+            else:
+                return  np.digitize([age],age_bins)[0]
+        sqlContext.udf.register('format_age', lambda x: _format_age(x), IntegerType())
+</code></pre>
+
+<p>Now, if I instantiate the class with <code>data=data_processor(filepath)</code>, I can do queries on the dataframe just fine. This, for examples, works:</p>
+
+<pre><code>sqlContext.sql(""select * from data limit 10"").take(1)
+</code></pre>
+
+<p>But I'm clearly not setting up the udf properly. If I try, for instance,</p>
+
+<pre><code>sqlContext.sql(""select age, format_age(age) from data limit 10"").take(1)
+</code></pre>
+
+<p>I get an error: </p>
+
+<pre><code>Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+</code></pre>
+
+<p>(with a long stacktrace, typical of Spark, that's too long to include here).</p>
+
+<p>So, what am I doing wrong exactly? What is the proper way to define a UDF within a method like this (preferably as a class method). I know Spark doesn't like passing class objects, hence the nested structure of <code>format_age</code> (inspired by <a href=""https://stackoverflow.com/questions/32569241/proper-handling-of-spark-broadcast-variables-in-a-python-class/32569955#32569955"">this question</a>).</p>
+
+<p>Ideas?</p>
+",Registering spark SQL User Defined Function within a Python class,0
+81,"<p>Do you know a good review of the existing e-commerce open source platforms? I'll like it to be written in PHP in order to understand them faster and to contribute back.</p>
+
+<p>many thanks</p>
+",E - Commerce open source review,1
+82,"<p>I'm trying to install my app by running Package Installer from the email attachment in Yahoo. My phone is on version 4.1 (Jellybean), so this should work, right? </p>
+
+<p>However, I get an error saying that there was a problem parsing the package despite the fact that my AndroidManifest specifies a <code>minSdkVersion</code> of 1, and my phone's is higher.</p>
+
+<p>I have enabled installing <code>apk</code> from sources that aren't from the playstore on my phone. What am I missing?</p>
+",Error : Parsing the package while installing APK,1
+83,"<p>To better organise my ASP.Net project I placed all my .aspx files in a folder called WebPages.</p>
+
+<p>I would like to find a way to mask out the 'WebPages' folder out from all my URLs. So for example, I do not want to use the following URLs:</p>
+
+<pre><code>http://localhost:7896/WebPages/index.aspx
+http://localhost:7896/WebPages/Admin/security.aspx
+</code></pre>
+
+<p>But instead, would like all my URLs to be as follows ('WebPages' is a physical folder that I use for structuring my work, but should not be visible to the outside world):</p>
+
+<pre><code>http://localhost:7896/index.aspx
+http://localhost:7896/admin/security.aspx
+</code></pre>
+
+<p>I was able to come up with a solution of my own by specifiying routing entries 'for every page' that I have in my project (and it works), but that is simply not maintainable going forward and I need another method.</p>
+
+<pre><code>public class Global : HttpApplication
+{
+    protected void Application_Start(object sender, EventArgs e)
+    {
+        RegisterRoutes(RouteTable.Routes);
+    }
+
+    public static void RegisterRoutes(RouteCollection routes)
+    {
+        routes.MapPageRoute("""", ""index.aspx"", ""~/WebPages/index.aspx"");
+        routes.MapPageRoute("""", ""admin/security.aspx"", ""~/WebPages/Admin/security.aspx"");
+    }
+}
+</code></pre>
+
+<p>Perhaps what I am after is a class that catches all requests, and simply appends my 'WebPages' physical directory?</p>
+",Asp.net routing to mask out physical folder in path,0
+84,"<p>I have to write some logic in Java which should retrieve all the index data from Solr.</p>
+
+<p>As of now I am doing it like this </p>
+
+<pre><code>        String confSolrUrl = ""http://localhost/solr/master/select?q=*%3A*&amp;wt=json&amp;indent=true""
+        LOG.info(confSolrUrl);
+        url = new URL(confSolrUrl);
+        URLConnection conn = url.openConnection();
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+        String inputLine;
+
+        //save to this filename
+        String fileName = ""/qwertyuiop.html"";
+        File file = new File(fileName);
+
+        if (!file.exists())
+        {
+            file.createNewFile();
+        }
+
+        FileWriter fw = new FileWriter(file.getAbsoluteFile());
+        BufferedWriter bw = new BufferedWriter(fw);
+
+        while ((inputLine = br.readLine()) != null) {
+            bw.write(inputLine);
+        }
+
+        bw.close();
+        br.close();
+
+        System.out.println(""Done"");
+</code></pre>
+
+<p>In my file I will get the whole HTML file that I can parse and extract my JSON.</p>
+
+<p>Is there any better way to do it? instead of get the resource from the url and parse it?</p>
+
+<p>Thank you</p>
+",How to get whole data from Solr,0
+85,"<p>I need to implement a security framework for a multiuser application that is in the design phase. I intend to use a Role based access control RBAC Security model (- BUT which can be further refined by the user adding additional privileges).</p>
+
+<p>Are there any existing C# ""security frameworks"" that I can use (at least as a starting ground), or do I have to write it from scratch?</p>
+
+<p>As an aside, I would prefer a ""pure library"" approach - as I don't want to be constrained to desktop or web application type using the security framework.</p>
+",C# multiuser security framework,1
+86,"<p>Hey in my last topic I made a mistake by not putting the css and Jquery in it.
+So i've tyed a little more and build a menu in CodePen.</p>
+
+<p>Now the problem i've is that still it doesnt work.
+I searched but coudn't find it so thats why i put it here.</p>
+
+<p><a href=""http://codepen.io/anon/pen/djwih"" rel=""nofollow"">http://codepen.io/anon/pen/djwih</a></p>
+
+<p>HTML is good, css probely not and i'm almost sure that the jquery is good.
+Can someone check this for me and correct my mistakes?</p>
+
+<p>On the top i've a logo on the left side and menu has to be on the right side.
+The menu has in the correct html an width of 1200px and is margin:0 auto;.
+But the logo is on the same height as the menu so that's why i've put #menu ul float:right;.</p>
+
+<p>Thanks in advance for your help!!</p>
+","HTML, CSS, Jquery help needed",1
+87,"<p>I just installed <a href=""https://www.music.mcgill.ca/~gary/rtmidi/"" rel=""nofollow"">RtMidi</a> for a project and compiled it. The examples in the <code>tests</code> folder work and so does my code if I put it in the folder and include it in the Makefile that compiles all the examples. How can I use RtMidi in a project with <code>#include &lt;RtMidi.h&gt;</code> instead of having my code in the tests folder? More specifically, what should I put in my Makefile? I've read a bit about dynamic and static libraries but I have no idea what I should be looking for. I've tried adding <code>-llibrtmidi</code> and <code>/usr/local/lib/librtmidi.a</code> without success.</p>
+",Adding a library to a makefile,0
+88,"<p>I have an ELB for an Elastic Beanstalk.</p>
+
+<p>I want to allow an incoming port from an EC2 instance resides in other subnet.</p>
+
+<p>Currently I allowed <code>0.0.0.0/0</code>.</p>
+
+<p>I want it removed from my rules. How can I do that?</p>
+",How to allow incoming from other subnet?,0
+89,"<p>What I've read and know about sessions is that they aren't really reliable with all that session id hijacking and stuff. So I decided I won't use sessions in my project, I'd rather just go with ordinary cookies and hope for the best.</p>
+
+<p>So basically what I have set up is kind of like a session but hopefully will be harder to crack. Unfortunately I seem to be unable to build it hard-to-crack. So basically I guess this is more of a security question rather than the choice between cookies or sessions, but I cannot seem to find this in any straight text.</p>
+
+<p>What am I supposed to hash in the session cookie and how? I've read that hashing algorithms can collide and it's just a matter of seconds before an attacker can create a string that would collide, with what is actually in the cookie, when hashed even though it may not be the same. I guess what I'm trying to ask is what is the proper way of saving this information in a cookie and actually what information should I store there?</p>
+
+<p>I know that basically with <code>httpOnly</code> no attacker should be able to grab a hold of a cookie but I suppose that this project may and probably wont use <code>SSL</code> so there's the old tapping method available. I know that I'm trying to build a skyscraper with sticks and stones here but asking is still worth a shot.</p>
+",Cookies instead of sessions?,1
+90,"<p>I have a DataFrame that loads from a huge json file and gets the schema from it. The schema is basically around 1000 columns. I want the same output of printSchema to be saved in a file instead of the console.</p>
+
+<p>Any ideas?</p>
+",How to write a DataFrame schema to file in Scala,0
+91,"<p>I want to be able to write a program in C# that rewrites a XML file so that the Dates becomes sorted. Is there a way to do this?
+I know how to read the XML file, but how do I make the program rewrite it so that the dates become sorted?  </p>
+
+<p>Here is the XML:</p>
+
+<pre><code>     &lt;?xml version=""1.0"" encoding=""utf-8""?&gt;
+&lt;?xml-stylesheet type=""text/xsl"" href=""transform.xslt""?&gt;
+&lt;Root&gt;
+  &lt;Customers&gt;
+    &lt;Customer CustomerID=""GREAL""&gt;
+      &lt;CompanyName&gt;Great Lakes Food Market&lt;/CompanyName&gt;
+      &lt;ContactName&gt;Howard Snyder&lt;/ContactName&gt;
+      &lt;ContactTitle&gt;Marketing Manager&lt;/ContactTitle&gt;
+      &lt;Phone&gt;(503) 555-7555&lt;/Phone&gt;
+      &lt;FullAddress&gt;
+        &lt;Address&gt;2732 Baker Blvd.&lt;/Address&gt;
+        &lt;City&gt;Eugene&lt;/City&gt;
+        &lt;Region&gt;OR&lt;/Region&gt;
+        &lt;PostalCode&gt;97403&lt;/PostalCode&gt;
+        &lt;Country&gt;USA&lt;/Country&gt;
+      &lt;/FullAddress&gt;
+    &lt;/Customer&gt;
+    &lt;Customer CustomerID=""HUNGC""&gt;
+      &lt;CompanyName&gt;Hungry Coyote Import Store&lt;/CompanyName&gt;
+      &lt;ContactName&gt;Yoshi Latimer&lt;/ContactName&gt;
+      &lt;ContactTitle&gt;Sales Representative&lt;/ContactTitle&gt;
+      &lt;Phone&gt;(503) 555-6874&lt;/Phone&gt;
+      &lt;Fax&gt;(503) 555-2376&lt;/Fax&gt;
+      &lt;FullAddress&gt;
+        &lt;Address&gt;City Center Plaza 516 Main St.&lt;/Address&gt;
+        &lt;City&gt;Elgin&lt;/City&gt;
+        &lt;Region&gt;OR&lt;/Region&gt;
+        &lt;PostalCode&gt;97827&lt;/PostalCode&gt;
+        &lt;Country&gt;USA&lt;/Country&gt;
+      &lt;/FullAddress&gt;
+    &lt;/Customer&gt;
+    &lt;Customer CustomerID=""LAZYK""&gt;
+      &lt;CompanyName&gt;Lazy K Kountry Store&lt;/CompanyName&gt;
+      &lt;ContactName&gt;John Steel&lt;/ContactName&gt;
+      &lt;ContactTitle&gt;Marketing Manager&lt;/ContactTitle&gt;
+      &lt;Phone&gt;(509) 555-7969&lt;/Phone&gt;
+      &lt;Fax&gt;(509) 555-6221&lt;/Fax&gt;
+      &lt;FullAddress&gt;
+        &lt;Address&gt;12 Orchestra Terrace&lt;/Address&gt;
+        &lt;City&gt;Walla Walla&lt;/City&gt;
+        &lt;Region&gt;WA&lt;/Region&gt;
+        &lt;PostalCode&gt;99362&lt;/PostalCode&gt;
+        &lt;Country&gt;USA&lt;/Country&gt;
+      &lt;/FullAddress&gt;
+    &lt;/Customer&gt;
+    &lt;Customer CustomerID=""LETSS""&gt;
+      &lt;CompanyName&gt;Let's Stop N Shop&lt;/CompanyName&gt;
+      &lt;ContactName&gt;Jaime Yorres&lt;/ContactName&gt;
+      &lt;ContactTitle&gt;Owner&lt;/ContactTitle&gt;
+      &lt;Phone&gt;(415) 555-5938&lt;/Phone&gt;
+      &lt;FullAddress&gt;
+        &lt;Address&gt;87 Polk St. Suite 5&lt;/Address&gt;
+        &lt;City&gt;San Francisco&lt;/City&gt;
+        &lt;Region&gt;CA&lt;/Region&gt;
+        &lt;PostalCode&gt;94117&lt;/PostalCode&gt;
+        &lt;Country&gt;USA&lt;/Country&gt;
+      &lt;/FullAddress&gt;
+    &lt;/Customer&gt;
+  &lt;/Customers&gt;
+  &lt;Orders&gt;
+    &lt;Order&gt;
+      &lt;CustomerID&gt;GREAL&lt;/CustomerID&gt;
+      &lt;EmployeeID&gt;6&lt;/EmployeeID&gt;
+      &lt;OrderDate&gt;1997-05-06T00:00:00&lt;/OrderDate&gt;
+      &lt;RequiredDate&gt;1997-05-20T00:00:00&lt;/RequiredDate&gt;
+      &lt;ShipInfo ShippedDate=""1997-05-09T00:00:00""&gt;
+        &lt;ShipVia&gt;2&lt;/ShipVia&gt;
+        &lt;Freight&gt;3.35&lt;/Freight&gt;
+        &lt;ShipName&gt;Great Lakes Food Market&lt;/ShipName&gt;
+        &lt;ShipAddress&gt;2732 Baker Blvd.&lt;/ShipAddress&gt;
+        &lt;ShipCity&gt;Eugene&lt;/ShipCity&gt;
+        &lt;ShipRegion&gt;OR&lt;/ShipRegion&gt;
+        &lt;ShipPostalCode&gt;97403&lt;/ShipPostalCode&gt;
+        &lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
+      &lt;/ShipInfo&gt;
+    &lt;/Order&gt;
+    &lt;Order&gt;
+      &lt;CustomerID&gt;GREAL&lt;/CustomerID&gt;
+      &lt;EmployeeID&gt;8&lt;/EmployeeID&gt;
+      &lt;OrderDate&gt;1997-07-04T00:00:00&lt;/OrderDate&gt;
+      &lt;RequiredDate&gt;1997-08-01T00:00:00&lt;/RequiredDate&gt;
+      &lt;ShipInfo ShippedDate=""1997-07-14T00:00:00""&gt;
+        &lt;ShipVia&gt;2&lt;/ShipVia&gt;
+        &lt;Freight&gt;4.42&lt;/Freight&gt;
+        &lt;ShipName&gt;Great Lakes Food Market&lt;/ShipName&gt;
+        &lt;ShipAddress&gt;2732 Baker Blvd.&lt;/ShipAddress&gt;
+        &lt;ShipCity&gt;Eugene&lt;/ShipCity&gt;
+        &lt;ShipRegion&gt;OR&lt;/ShipRegion&gt;
+        &lt;ShipPostalCode&gt;97403&lt;/ShipPostalCode&gt;
+        &lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
+      &lt;/ShipInfo&gt;
+    &lt;/Order&gt;
+    &lt;Order&gt;
+      &lt;CustomerID&gt;GREAL&lt;/CustomerID&gt;
+      &lt;EmployeeID&gt;1&lt;/EmployeeID&gt;
+      &lt;OrderDate&gt;1997-07-31T00:00:00&lt;/OrderDate&gt;
+      &lt;RequiredDate&gt;1997-08-28T00:00:00&lt;/RequiredDate&gt;
+      &lt;ShipInfo ShippedDate=""1997-08-05T00:00:00""&gt;
+        &lt;ShipVia&gt;2&lt;/ShipVia&gt;
+        &lt;Freight&gt;116.53&lt;/Freight&gt;
+        &lt;ShipName&gt;Great Lakes Food Market&lt;/ShipName&gt;
+        &lt;ShipAddress&gt;2732 Baker Blvd.&lt;/ShipAddress&gt;
+        &lt;ShipCity&gt;Eugene&lt;/ShipCity&gt;
+        &lt;ShipRegion&gt;OR&lt;/ShipRegion&gt;
+        &lt;ShipPostalCode&gt;97403&lt;/ShipPostalCode&gt;
+        &lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
+      &lt;/ShipInfo&gt;
+    &lt;/Order&gt;
+&lt;/Orders&gt;
+&lt;/Root&gt;
+</code></pre>
+
+<p>I want it to get sorted by <em>OrderDate</em></p>
+
+<pre><code> class Program
+    {
+        static void Main(string[] args)
+        {
+            XDocument xDoc;
+            xDoc = XDocument.Load(""CustomerOrders.xml"");
+        }
+    }
+</code></pre>
+",rewriting XML to a sorted date version,0
+92,"<p>I have an array of arrays with booleans:</p>
+
+<pre><code>[[False False  True ..., False  True False]
+ [False  True  True ...,  True False  True]
+ [False False False ...,  True  True False]
+ ..., 
+ [False False False ..., False False False]
+ [ True  True  True ...,  True  True  True]
+ [ True  True  True ...,  True  True  True]]
+&lt;type 'numpy.ndarray'&gt;
+</code></pre>
+
+<p>The following code counts Trues in the <strong>rows</strong></p>
+
+<pre><code>results = []
+for r in my_array:
+   results.append(np.sum(r))
+</code></pre>
+
+<p>How can I count the number of booleans by column?</p>
+",Count Booleans by Column in Array of Arrays,0
+93,"<p>I just started using <code>kableExtra</code> library to make my tables look better in the PDF output.<br>
+But when I use <code>kable()</code> function in R Notebook file, it does not show the output. Instead I see a large white space where the output should be.<br>
+Here is a screenshot:  </p>
+
+<p><a href=""https://i.stack.imgur.com/iy7Zl.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/iy7Zl.png"" alt=""enter image description here""></a>
+When I <code>Knit</code> the file to PDF I can see the output.<br>
+Here is a screenshot:<br>
+<a href=""https://i.stack.imgur.com/Ofkn9.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/Ofkn9.png"" alt=""enter image description here""></a><br>
+Is there a way I can make the output appear both in the Notebook and PDF?
+Here is my code:</p>
+
+<pre><code>---
+title: ""R Notebook""
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r  message=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+library(dplyr)
+#plot(cars)
+```
+
+```{r}
+ cars %&gt;% 
+  slice(1:10) %&gt;% 
+  select(speed, dist) %&gt;% 
+  kable(format = ""latex"", booktabs = T) %&gt;% 
+  column_spec(column = 1:2, width = ""0.5in"")
+
+```
+</code></pre>
+",R - kable() used in .Rmd does not show output in notebook,0
+94,"<p>I have a nant script that ...
+1. takes the content of disc-file
+2. assigns that content to a nant property
+3. and then calls sqlcmd with a -v passing in that property containg the content of the disc file
+4. inside the sql script the contents of the file should be used by a stored proc. </p>
+
+<p>The problem is that when the content of the file contains a space the nant build stops with a ""Invalid argument"" issue</p>
+
+<p>Anone know a way around this ?</p>
+
+<p>The top part of the nant script is ...</p>
+
+<pre><code>&lt;?xml version=""1.0""?&gt;
+&lt;!-- the main name of this project --&gt;
+&lt;project name=""Hops"" default=""all""&gt;
+  &lt;!-- BuildHistory --&gt;
+  &lt;property name=""buildHistoryContents"" value="""" /&gt;
+  &lt;xmlpeek xpath=""/"" file=""BuildNotes.xml"" property=""buildHistoryContents""&gt;&lt;/xmlpeek&gt;
+  &lt;!-- &lt;echo message=""${buildHistoryContents}"" /&gt; --&gt;
+
+  &lt;!-- ***************** --&gt;
+  &lt;target name=""ExecSql""&gt;
+    &lt;echo message=""running sql script : ${SqlBuildScriptsDir}${sqlBuildFileName}"" /&gt;
+    &lt;exec program=""${SqlCmd}"" commandline=""-S ${SqlServerInstanceName} -E -d HBus -i ${SqlBuildScriptsDir}${sqlBuildFileName} -v vSchemaVersion=${buildHistoryContents}  "" /&gt;
+  &lt;/target&gt;
+</code></pre>
+
+<p>The sql script contains the line ...</p>
+
+<pre><code>exec lsp_SchemaVersionUpsert '1.4', N'$(vSchemaVersion)'
+</code></pre>
+
+<p>A disc file content that works is ...</p>
+
+<pre><code>&lt;BuildNotes&gt;
+  &lt;Note&gt;
+    &lt;buildVer&gt;HasNotSpace&lt;/buildVer&gt;
+  &lt;/Note&gt;
+&lt;/BuildNotes&gt;
+</code></pre>
+
+<p>A disc file content that does not works is ...</p>
+
+<pre><code>&lt;BuildNotes&gt;
+  &lt;Note&gt;
+    &lt;buildVer&gt;Has Space&lt;/buildVer&gt;
+  &lt;/Note&gt;
+&lt;/BuildNotes&gt;
+</code></pre>
+
+<p>The use of all this is pass xml build comments to a table logging version build history for the db schema.</p>
+
+<p>Does anyone know an alternate method or know a way through this ?</p>
+
+<p>The next part, added after Phillip Keeley correcty solved first part (the <em>SPACE Problem</em>)
+I simplified the original task to simplify the question.</p>
+
+<p>There is also a <em>Quoted Attribute Problem</em> ; xml quoted attributes cause the nant build to fail with ""Invalid Argument"".</p>
+
+<p>eg this will cause nant to choke but removing the dt attribute will enable the nant build to succeed ...</p>
+
+<pre><code>&lt;BuildNotes&gt;
+  &lt;Note&gt;
+    &lt;buildVer&gt;1.4&lt;/buildVer&gt;
+    &lt;dateStarted&gt;09/24/2009 11:25:42&lt;/dateStarted&gt;
+    &lt;Item dt=""20091008"" &gt;SpacesAndNoQuotedAttribute&lt;/Item&gt;
+  &lt;/Note&gt;
+&lt;/BuildNotes&gt;
+</code></pre>
+
+<p>Any ideas ... ?</p>
+","Nant, SqlCmd -v switch and spaces in nant property fails build with invalid argument",0
+95,"<p>I am trying to run code dynamically in groovy. I have <code>someNode[0]</code>, which is the value,  in variable <code>var1</code></p>
+
+<p>I then added double quotes to it like this</p>
+
+<pre><code>var2 = ""\""""+var1+""\""""
+</code></pre>
+
+<p>then I  tried to run this</p>
+
+<pre><code>request.abc.""$var2""=Value
+</code></pre>
+
+<p>I saw <a href=""https://stackoverflow.com/questions/6920826/question-about-in-groovy"">here</a> that something of this sort can be done on properties and methods. But the above code is not working. Giving me error </p>
+
+<pre><code>An error occurred [Cannot set property '""someNode[0]""' on null object], see error log for details
+</code></pre>
+
+<p>Any help is appreciated. Thanks.</p>
+
+<p><strong>Edit</strong>
+Heres a snippet of my request</p>
+
+<pre><code>{
+   ""app"":{
+      ""bundle"":""531323947"",
+      ""cat"":[
+         ""IAB1"",
+         ""IAB9"",
+         ""IAB9-30"",
+         ""entertainment"",
+         ""games""
+      ],
+      ""id"":""agltb3B1Yi1pbmNyDAsSA0FwcBitsL4UDA"",
+      .
+      .
+</code></pre>
+
+<p>The field I am trying to manipulate is <code>cat[0]</code>, which is <code>IAB1</code>  (I just used <code>abc</code> and <code>someNode[0]</code> in the code that i wrote above but actually they are <code>app</code> and <code>cat[0]</code>)</p>
+
+<p>Also, I parsed the request with <code>jsonslurper</code> befor running the above code</p>
+
+<p>Thank you for your help</p>
+",executing code dynamically in groovy,0
+96,"<p>How can I change the format of dates <code>12/23/02</code> to <code>23/12/2002</code> or <code>03/35/55</code> to <code>35/03/2055</code>?</p>
+
+<p>I can read the dates from text file but I can't change their format:</p>
+
+<p><code>15/06/17</code> ====> <code>06/15/2017</code></p>
+",Changing format of date,1
+97,"<p>I have array:</p>
+
+<pre><code>$array = array(
+         0 =&gt; 'aaa',
+         1 =&gt; 'bbb',
+         2 =&gt; 'ccc',
+         3 =&gt; 'ddd'
+        );
+</code></pre>
+
+<p>How can i make tree from this array? I would like receive:</p>
+
+<pre><code>$array = array(
+         0 =&gt; 'aaabbbcccddd',
+         1 =&gt; 'aaabbbccc',
+         2 =&gt; 'aaabbb',
+         3 =&gt; 'aaa'
+        );
+</code></pre>
+",Making tree from array,1
+98,"<p>I have trajectory data where each vehicle has its own time to start. Each vehicle is a point in the animation. So, in the dataset, for each row there is coordinate point (x,y) along with a timestamp. So, fixed time interval would not work for me. I tried with <code>loop</code> and <code>sleep</code> but it not showing the animation but only the first result. But if debug line by line, it seems okay(updating with new points after each iteration).  Here is my code (this is to test: <code>loop</code>, <code>sleep</code> and <code>animation</code>):</p>
+
+<pre><code>    #sample data
+    x=[20,23,25,27,29,31]
+    y=[10,12,14,16,17,19]
+    t=[2,5,1,4,3,1,]
+    #code
+    fig, ax = plt.subplots()
+    ax.set(xlim=(10, 90), ylim=(0, 60))  
+    for i in range(1,6):
+        ax.scatter(x[:i+1], y[:i+1])
+        plt.show()
+        time.sleep(t[i])
+</code></pre>
+
+<p>How can get the animation effect?</p>
+",animate with variable time,0
+99,"<p>I have database with the field name <code>brand_name</code> and <code>brand_opendate</code> (the date of opening of the brand). I want to make query that will display the <code>brand_name</code> which is having brand open date between the today's date and before the one month. What I am trying to say is that suppose today's date is <code>2014/02/13</code> then it will display the <code>brand_name</code> between <code>2014/01/13 and 2014/02/13</code>.  I need to find the current date to do this. </p>
+",How do I create a query which finds results between now and a month ago,1
