@@ -20,7 +20,10 @@ logging.basicConfig(level=logging.INFO)
 
 def tfidf_features(train, test, type):
     global model_output_dir
-    tfidf_vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=10, max_features=1000)
+    min_df = 10
+    if len(train) < 1000:
+        min_df = 1
+    tfidf_vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=min_df, max_features=1000)
     train = tfidf_vectorizer.fit_transform(train)
     test = tfidf_vectorizer.transform(test)
     pickle.dump(tfidf_vectorizer, open(model_output_dir + type + "_tfidf_vectorizer.pickle", "wb"))

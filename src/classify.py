@@ -28,7 +28,7 @@ def tfidf_features(model_path, text, type):
 
 
 def save_results(predictions):
-    output_fp = "data/output_file.csv"
+    output_fp = "output_file.csv"
     predictions = pd.DataFrame(predictions, columns=['pred_labels'])
     predictions.to_csv(output_fp)
     return output_fp
