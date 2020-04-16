@@ -17,8 +17,8 @@ The project used stackoverflow data to build a machine learning model to classif
 
 #### 1: Training the model:
 
-python train.py <path to train dataset> <path to  model output dir>
+python train.py path/to/train/dataset path/to/model/output/dir
 
 #### 2. classify a dataset:
 
-python classify.py <model dir path> <path of file to generate predictiction>
+python classify.py model/dir/path path/of/input/file
