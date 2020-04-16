@@ -13,10 +13,14 @@ The project used stackoverflow data to build a machine learning model to classif
 1. 100k training examples, the two classes are equally represented in the training data.
 2. The on topic questions are under sampled from a larger dataset to create this artificially balanced dataset.
 
-### [Exploratory Data Analysis](etc/so-topic-classifier-EDA.ipynb)
-### [Exploratory Data Analysis - HTML](etc/so-topic-classifier-EDA.html)
-Since the nice plotly visualization not show up in github
+Jupyter notebook with eploratory data analysis.
+#### [Exploratory Data Analysis](etc/so-topic-classifier-EDA.ipynb)
 
+Since the nice plotly visualization not show up in github
+#### [Exploratory Data Analysis - HTML](etc/so-topic-classifier-EDA.html)
+
+Response to the data and model specific questions  
+#### [Answers](answers.md) 
 
 ### Usage:
 
@@ -28,4 +32,3 @@ python train.py path/to/train/dataset path/to/model/output/dir
 
 python classify.py model/dir/path path/of/input/file
 
-[Exploratory Data Analysis](etc/so-topic-classifier-EDA.html)
