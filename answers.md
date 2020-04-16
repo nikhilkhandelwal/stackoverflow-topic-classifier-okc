@@ -6,7 +6,7 @@ Why did you choose that metric?
 2) The dataset we’ve given you is artificially balanced such that there’s an even split of
 closed posts to accepted posts. Should this influence the metrics you measure?
 
-      #### Yes, this means that the real test dataset will have a different distribution. I have used the ensemble learning model Random Forrest and ADA Boost which  are robust against over fitting and should perform better on the imbalanced dataset.
+      #### Yes, we should use a precision recall curve to measure the performance on imbalanced data. Since in precision is influenced by class imbalance, we should use PR curve to compares different models and approaches. 
 3) How generalizable is your method? If you were given a different (disjoint) random
 sample of posts with the same labeling scheme, would you expect it to perform well?
 Why or why not? Do you have evidence for your reasoning?
@@ -16,7 +16,7 @@ Why or why not? Do you have evidence for your reasoning?
 4) How well would this method work on an entirely new close reason, e.g. duplicate or
 spam posts?
       ####  Depends on the reason, if the  text embeddings are able to differentiate between classes, then it might perform ok , but features like "code block", "number of urls" might not be applicable
-
+      #### Will not work on duplicate tagging problems
 5) Are there edge cases that your method tends to do worse with? Better? E.g., How well
 does it handle really long posts or titles?
 
@@ -25,4 +25,4 @@ does it handle really long posts or titles?
      #### Since cnn had good results, i would like to add the numeric features and train a more complex model.
      #### I would also want to do more feature engineering 
 7) If you found any issues with the dataset, what are they?
-    #### I didnt find any.
+    #### Since off topic itself is subjective, so there were some similar questions with opposite labels. So I think label noise might be an issue
