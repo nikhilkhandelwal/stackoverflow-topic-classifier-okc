@@ -1,9 +1,6 @@
 import re
 from abc import ABC
 
-import contractions
-import nltk.stem as stem
-import nltk.tokenize as tokenizer
 import stop_words as stop_words
 from nltk.corpus import stopwords
 import nltk.tokenize as tokenizer
@@ -26,7 +23,6 @@ Ideally if I had more time I would have made more elaborate subroutines, for eac
 # - Remove HTML
 # - Remove special characters
 # - Stemming
-# - Remove code block
 
 class QuestionCleaner(clean.Cleaner, ABC):
     def __init__(self, text):

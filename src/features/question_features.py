@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 
 """
-Extract features from messages using tokens and text
+Extract features from question using tokens and text
 All the functions are self explanatory  
 """
 

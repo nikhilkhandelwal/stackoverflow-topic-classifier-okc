@@ -10,7 +10,7 @@ import src.clean.base_cleaner as clean
 stemmer = SnowballStemmer('english')
 
 """
-Question Cleaner for cleaning stack over questions. All function names are self explanatory.
+Title Cleaner for cleaning stack over questions. All function names are self explanatory.
 Ideally if I had more time I would have made more elaborate subroutines, for each cleaning step a separate function 
 """
 
@@ -18,7 +18,6 @@ Ideally if I had more time I would have made more elaborate subroutines, for eac
 # Preprocess the question title for vectorization
 # - Convert to lowercase
 # - Remove stopwords
-# - Remove HTML
 # - Remove special characters
 # - Stemming
 
